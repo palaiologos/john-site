@@ -1,0 +1,221 @@
+@import "variables/variables"
+
+h2
+  text-align: center
+  margin: 0 auto
+
+.wrapper
+  position: relative
+  > .inner
+    padding: 5em 5em 3em 5em
+    max-width: 100%
+    width: 75em
+  &.style3
+    background-color: $white
+  &.style3-alt
+    background-color: $gray
+  &.fullscreen
+    display: -moz-flex
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    -moz-flex-direction: column
+    -webkit-flex-direction: column
+    -ms-flex-direction: column
+    flex-direction: column
+    -moz-justify-content: center
+    -webkit-justify-content: center
+    -ms-justify-content: center
+    justify-content: center
+    min-height: 100vh
+
+@media screen and (max-width: 1680px)
+  .wrapper > .inner
+    padding: 4em 4em 2em 4em
+
+@media screen and (max-width: 1280px)
+  .wrapper > .inner
+    width: 100%
+
+@media screen and (max-width: 736px)
+  .wrapper > .inner
+    padding: 3em 2em 1em 2em
+
+@media screen and (max-width: 1280px)
+  .wrapper.fullscreen
+    min-height: calc(100vh - 2.5em)
+
+@media screen and (max-width: 736px)
+  .wrapper.fullscreen
+    padding: 2em 0
+    min-height: 0
+
+.wrapper.fade-up
+  > .inner
+    -moz-transform: translateY(0)
+    -webkit-transform: translateY(0)
+    -ms-transform: translateY(0)
+    transform: translateY(0)
+    -moz-transition: opacity 1s ease, -moz-transform 1s ease
+    -webkit-transition: opacity 1s ease, -webkit-transform 1s ease
+    -ms-transition: opacity 1s ease, -ms-transform 1s ease
+    transition: opacity 1s ease, transform 1s ease
+    opacity: 1.0
+  &.inactive > .inner
+    opacity: 0
+    -moz-transform: translateY(1em)
+    -webkit-transform: translateY(1em)
+    -ms-transform: translateY(1em)
+    transform: translateY(1em)
+
+body.is-loading .wrapper.fade-up > .inner
+  opacity: 0
+  -moz-transform: translateY(1em)
+  -webkit-transform: translateY(1em)
+  -ms-transform: translateY(1em)
+  transform: translateY(1em)
+
+.wrapper.fade
+  > .inner
+    -moz-transition: opacity 1s ease
+    -webkit-transition: opacity 1s ease
+    -ms-transition: opacity 1s ease
+    transition: opacity 1s ease
+    opacity: 1.0
+  &.inactive > .inner
+    opacity: 0
+
+body.is-loading .wrapper.fade > .inner
+  opacity: 0
+
+
+/* Features */
+.features
+  display: -moz-flex
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  -moz-flex-wrap: wrap
+  -webkit-flex-wrap: wrap
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
+  border-radius: 0.25em
+  border: solid 2px $cream
+  background: $white
+  margin: 0 0 2em 0
+  section
+    padding: 3.5em 3em 1em 7em
+    background-color: $white
+    width: 50%
+    border-top: solid 2px $cream
+    position: relative
+    &:nth-child(-n + 2)
+      border-top-width: 0
+    &:nth-child(2n)
+      border-left: solid 1px $cream
+    .icon
+      -moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease
+      -webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease
+      -ms-transition: opacity 0.5s ease, -ms-transform 0.5s ease
+      transition: opacity 0.5s ease, transform 0.5s ease
+      -moz-transition-delay: 1s
+      -webkit-transition-delay: 1s
+      -ms-transition-delay: 1s
+      transition-delay: 1s
+      -moz-transform: scale(1)
+      -webkit-transform: scale(1)
+      -ms-transform: scale(1)
+      transform: scale(1)
+      position: absolute
+      left: 3em
+      top: 3em
+      opacity: 1
+    &:nth-child(1) .icon
+      -moz-transition-delay: 0.15s
+      -webkit-transition-delay: 0.15s
+      -ms-transition-delay: 0.15s
+      transition-delay: 0.15s
+    &:nth-child(2) .icon
+      -moz-transition-delay: 0.3s
+      -webkit-transition-delay: 0.3s
+      -ms-transition-delay: 0.3s
+      transition-delay: 0.3s
+    &:nth-child(3) .icon
+      -moz-transition-delay: 0.45s
+      -webkit-transition-delay: 0.45s
+      -ms-transition-delay: 0.45s
+      transition-delay: 0.45s
+    &:nth-child(4) .icon
+      -moz-transition-delay: 0.6s
+      -webkit-transition-delay: 0.6s
+      -ms-transition-delay: 0.6s
+      transition-delay: 0.6s
+  &.inactive section .icon
+    -moz-transform: scale(0.5)
+    -webkit-transform: scale(0.5)
+    -ms-transform: scale(0.5)
+    transform: scale(0.5)
+    opacity: 0
+
+@media screen and (max-width: 980px)
+  .features
+    display: block
+    section
+      border-top-width: 1px !important
+      border-left-width: 0 !important
+      width: 100%
+      &:first-child
+        border-top-width: 0 !important
+
+@media screen and (max-width: 736px)
+  .features section
+    padding: 2.5em 1.5em 0.1em 5.5em
+    .icon
+      left: 1.5em
+      top: 2em
+
+@media screen and (max-width: 480px)
+  .features section
+    padding: 2em 1.5em 0.1em 1.5em
+    .icon
+      left: 0
+      position: relative
+      top: 0
+
+.icon
+  text-decoration: none
+  border-bottom: none
+  position: relative
+  &:before
+    -moz-osx-font-smoothing: grayscale
+    -webkit-font-smoothing: antialiased
+    font-family: FontAwesome
+    font-style: normal
+    font-weight: normal
+    text-transform: none !important
+  > .label
+    display: none
+  &.major
+    width: 2.5em
+    height: 2.5em
+    display: block
+    background: $pink
+    border-radius: 100%
+    text-align: center
+    line-height: 2.5em
+    margin: 0 0 1.3em 0
+    &:before
+      font-size: 1.25em
+
+.wrapper
+  &.style3 .icon.major:before
+    color: $white
+  &.style3-alt .icon.major:before
+    color: $white
+
+#one
+  background-color: #4696e5
+  background-image: url('section-header-overlay.png'), url('section-header-overlay.svg')
+  background-position: top left, center center
+  background-attachment: fixed, fixed
+  background-size: auto, cover

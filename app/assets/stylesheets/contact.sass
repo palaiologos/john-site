@@ -1,0 +1,130 @@
+@import "variables/variables"
+
+form
+  margin: 0 0 2em 0
+  .field
+    margin: 0 0 1em 0
+    &.half
+      width: 50%
+      float: left
+      padding: 0 0 0 0.75em
+      &.first
+        padding: 0 0.75em 0 0
+  > .actions
+    margin: 2em 0 0 0 !important
+
+@media screen and (max-width: 736px)
+  form .field.half
+    width: 100%
+    float: none
+    padding: 0
+    &.first
+      padding: 0
+
+label
+  color: $black !important
+  font-weight: bold
+  line-height: 1.5
+  margin: 0 0 0.7em 0
+  display: block
+  font-size: 1.1em
+
+input
+  &[type="text"], &[type="password"], &[type="email"], &[type="tel"]
+    -moz-appearance: none
+    -webkit-appearance: none
+    -ms-appearance: none
+    appearance: none
+    background: $white
+    border-radius: 0.25em
+    border: none
+    border: solid 1px $black !important
+    color: $black !important
+    display: block
+    outline: 0
+    padding: 0 1em
+    text-decoration: none
+    width: 100%
+
+select, textarea
+  -moz-appearance: none
+  -webkit-appearance: none
+  -ms-appearance: none
+  appearance: none
+  background: $white
+  border-radius: 0.25em
+  border: none
+  border: solid 1px $black !important
+  color: $black !important
+  display: block
+  outline: 0
+  padding: 0 1em
+  text-decoration: none
+  width: 100%
+
+input
+  &[type="text"]:invalid, &[type="password"]:invalid, &[type="email"]:invalid, &[type="tel"]:invalid
+    box-shadow: none
+
+select:invalid, textarea:invalid
+  box-shadow: none
+
+input
+  &[type="text"]:focus, &[type="password"]:focus, &[type="email"]:focus, &[type="tel"]:focus
+    border-color: $black
+    box-shadow: 0 0 0 1px $black
+
+select:focus, textarea:focus
+  border-color: $black
+  box-shadow: 0 0 0 1px $black
+
+select option
+  background-color: $cream
+  color: $black
+
+select
+  height: 2.75em
+
+textarea
+  padding: 0.75em 1em
+
+body.is-ie textarea
+  min-height: 10em
+
+\::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder, .formerize-placeholder
+  color: $white !important
+  opacity: 1.0
+
+#one
+  h2
+    color: $white
+
+.inner
+  p
+    text-align: center
+
+.actions
+  text-align: center
+
+
+.contact-header
+  color: $gray
+
+.contact-text
+  color: $gray
+
+.white-background
+  background-color: $white !important
+
+
+//.form-response
+  text-align: center
+  padding-top: 24px
+
+  .success
+    display: none
+    color: green !important
+
+  .error
+    display: none
+    color: red !important
