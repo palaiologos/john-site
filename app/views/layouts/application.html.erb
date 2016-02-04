@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>JohnSite</title>
+  <title>John Williams // Developer in Seattle</title>
+  <meta name="description" content="John Williams is an aspiring web developer living in Seattle.">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Vollkorn:400,700,400italic%7COpen+Sans:400,400italic,600,600italic,700,700italic%7CMontserrat:400,700">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.string/3.2.2/underscore.string.min.js"></script>
+  <link rel="shortcut icon" href="http://johnaxfordwilliams.com/favicon.ico" />
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
+  <!-- Header -->
+  <%= render 'shared/header' %>
+
 <%= yield %>
 
+  <!-- Footer -->
+  <%= render 'shared/footer' %>
 </body>
 </html>
