@@ -28,7 +28,7 @@
   a span
     font-family: 'Montserrat', sans-serif
     font-size: 1.25rem
-    color: #171818
+    color: $black
     display: block
     float: left
     letter-spacing: -.02rem
@@ -41,6 +41,7 @@
   font-family: 'Montserrat', sans-serif
   font-size: 1rem
   padding-top: 0.438rem
+  padding-right: 2em
   li
     display: inline-block
     padding: 0 0 0 3rem
@@ -107,10 +108,6 @@
   color: #bcbcbc
   margin: 2rem 0 0
 
-#pull
-  display: none
-  text-indent: -9999px
-
 
 /* Media Screen */
 @media screen and (max-width: $mobile-width)
@@ -130,7 +127,8 @@
         font-size: 1.2rem
 
 
-@media only screen and (max-width: 719px)
+
+@media only screen and (max-width: $tablet-width)
   .container-12
     width: 90%
 
@@ -146,39 +144,87 @@
     margin-top: .6rem
 
   #nav
-    // display: none
-    height: auto
-    float: left
+    display: block
+    float: right
     font-family: 'Montserrat', sans-serif
-    font-size: 16px
-    text-align: left
-    margin-top: 20px
-    background: $white
-    clear: left
-    width: 100%
+    font-size: 1rem
+    padding-top: 0.438rem
     li
-      display: block
-      border-bottom: solid 1px #eaeaea
-      margin: 0
-      padding: 0
+      display: inline-block
+      padding: 0 0 0 3rem
       a
-        display: block
-        padding: 8px 0
+        color: #a2a2a2
+        &:hover
+          color: #525252
+
+      &#current a
         color: $black
-        &:active
-          color: $white
-          background: $black
-          padding: 12px 6px
-
-    li#current a:active
-      color: #333
-      background: $white
-      padding: 8px 0
-
-    li:last-child
-      border: 0
 
     .fa-angle-right
-      display: block
-      float: right
-      margin-top: 1px
+      display: none
+
+
+@media screen and (min-width: $mobile-width) and (max-width: $tablet-width)
+  .container-12
+    width: 100%
+
+    .grid-12
+      width: 100%
+      margin-left: 0
+      margin-right: 0
+
+  #logo a span
+    margin-top: .5rem
+
+  #nav
+    display: block
+    float: right
+    font-family: 'Montserrat', sans-serif
+    font-size: 1rem
+    padding-top: 0.438rem
+    li
+      display: inline-block
+      padding: 0 0 0 3rem
+      a
+        color: #a2a2a2
+        &:hover
+          color: #525252
+
+      &#current a
+        color: $black
+
+    .fa-angle-right
+      display: none
+
+
+@media screen and (min-width: $tablet-width) and (max-width: $desktop-width)
+  #logo a span
+    margin-top: .5rem
+
+  #nav
+    display: block
+    float: right
+    font-family: 'Montserrat', sans-serif
+    font-size: 1rem
+    padding-top: 0.438rem
+    li
+      display: inline-block
+      padding: 0 0 0 3rem
+      a
+        color: #a2a2a2
+        &:hover
+          color: #525252
+
+      &#current a
+        color: $black
+
+    .fa-angle-right
+      display: none
+
+
+@media screen and (min-width: $desktop-width) and (max-width: $large-desktop-width)
+  .container-12
+    width: $desktop-width
+
+    .grid-12
+      width: 940px

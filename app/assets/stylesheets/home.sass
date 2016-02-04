@@ -1,0 +1,182 @@
+@import "variables/variables"
+
+/* Reset */
+html, body, div, span,
+iframe, h1, h2, h3,
+h4, p, a, img,
+strong, i, center, ul,
+li, form, label,
+footer, header,
+nav, section
+  margin: 0
+  padding: 0
+  border: 0
+  outline: 0
+  font-size: 100%
+  vertical-align: baseline
+  background: transparent
+  font: inherit
+
+footer, header,
+hgroup, menu,
+nav, section
+  display: block
+
+
+/* General */
+html, body
+  width: 100%
+  height: 100%
+
+body
+  line-height: 1
+  -webkit-font-smoothing: antialiased
+  -webkit-text-size-adjust: 100%
+  -moz-font-smoothing: antialiased
+  -o-font-smoothing: antialiased
+  background: $white
+  color: $gray
+
+h1, h2, h3, h4, h5, h6
+  color: $black
+  font-weight: normal
+  font-family: "Montserrat", sans-serif
+
+h1
+  font-size: 2.25rem
+  margin-bottom: 3rem
+  line-height: 1.4
+
+h2
+  font-size: 2.25rem
+  margin-bottom: 3rem
+  line-height: 1.4
+
+h3
+  line-height: 1.4
+  font-size: 1.35rem
+  font-family: 'Open Sans', sans-serif
+  display: block
+  color: $black
+
+a
+  color: #333
+  text-decoration: none
+  outline: 0
+  -webkit-transition: all .4s ease 0s
+  -moz-transition: all .4s ease 0s
+  -o-transition: all .4s ease 0s
+  transition: all .4s ease 0s
+
+a:hover,
+a:focus
+  color: #5295d4
+
+
+::selection
+  background: $black
+  color: $white
+
+.clear
+  clear: both
+  display: block
+  overflow: hidden
+  visibility: hidden
+  width: 0
+  height: 0
+
+.button
+  display: inline-block
+  font-size: 1.125rem
+  text-align: center
+  padding: .5em 1rem
+  -webkit-border-radius: 50px
+  border-radius: 50px
+  border: solid 2px $gray
+  cursor: pointer
+  -webkit-transition: all .4s ease 0s
+  -moz-transition: all .4s ease 0s
+  -o-transition: all .4s ease 0s
+  transition: all .4s ease 0s
+
+.button:hover
+  border: solid 2px #5295d4
+  color: #5295d4
+
+ul
+  list-style: none
+
+
+//.container-12
+  margin: 0 auto
+  width: 1200px
+
+  .grid-12
+    width: 1180px
+
+
+
+
+/* Animations */
+/*!
+ *Animate.css - http://daneden.me/animate
+ *Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ *Copyright (c) 2014 Daniel Eden
+.animated
+  -webkit-animation-duration: 1s
+  animation-duration: 1s
+  -webkit-animation-fill-mode: both
+  animation-fill-mode: both
+  &.infinite
+    -webkit-animation-iteration-count: infinite
+    animation-iteration-count: infinite
+  &.hinge
+    -webkit-animation-duration: 2s
+    animation-duration: 2s
+@-webkit-keyframes fadeInDown
+  0%
+    opacity: 0
+    -webkit-transform: translate3d(0, -100%, 0)
+    transform: translate3d(0, -100%, 0)
+  100%
+    opacity: 1
+    -webkit-transform: none
+    transform: none
+@keyframes fadeInDown
+  0%
+    opacity: 0
+    -webkit-transform: translate3d(0, -100%, 0)
+    -ms-transform: translate3d(0, -100%, 0)
+    transform: translate3d(0, -100%, 0)
+  100%
+    opacity: 1
+    -webkit-transform: none
+    -ms-transform: none
+    transform: none
+.fadeInDown
+  -webkit-animation-name: fadeInDown
+  animation-name: fadeInDown
+@-webkit-keyframes fadeInDownBig
+  0%
+    opacity: 0
+    -webkit-transform: translate3d(0, -2000px, 0)
+    transform: translate3d(0, -2000px, 0)
+  100%
+    opacity: 1
+    -webkit-transform: none
+    transform: none
+@keyframes fadeInDownBig
+  0%
+    opacity: 0
+    -webkit-transform: translate3d(0, -2000px, 0)
+    -ms-transform: translate3d(0, -2000px, 0)
+    transform: translate3d(0, -2000px, 0)
+  100%
+    opacity: 1
+    -webkit-transform: none
+    -ms-transform: none
+    transform: none
+.fadeInDownBig
+  -webkit-animation-name: fadeInDownBig
+  animation-name: fadeInDownBig

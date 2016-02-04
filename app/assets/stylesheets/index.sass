@@ -1,0 +1,837 @@
+@import "variables/variables"
+
+
+/* Banner */
+#banner
+  width: 100%
+  background: url('banner-image.jpg') no-repeat center (center / cover)
+  height: 65%
+  display: table
+  h1
+    display: block
+    max-width: 50%
+    color: $white
+    font-family: 'Open Sans', sans-serif
+    font-size: 2.75rem
+    font-weight: normal
+    text-align: left
+
+#banner-heading
+  display: table-cell
+  vertical-align: middle
+  padding: 2em 0
+
+#banner-full
+  width: 100%
+  height: 40%
+  display: table
+  display: block
+  overflow: hidden
+  img
+    width: 100%
+    display: block
+    margin-top: -40%
+
+*
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+  &:before, &:after
+    -moz-box-sizing: border-box
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
+
+/* Basic */
+@-ms-viewport
+  width: device-width
+body
+  -ms-overflow-style: scrollbar
+  background: $white
+  &.is-loading *
+    -moz-animation: none !important
+    -webkit-animation: none !important
+    -ms-animation: none !important
+    animation: none !important
+    -moz-transition: none !important
+    -webkit-transition: none !important
+    -ms-transition: none !important
+    transition: none !important
+    &:before, &:after
+      -moz-animation: none !important
+      -webkit-animation: none !important
+      -ms-animation: none !important
+      animation: none !important
+      -moz-transition: none !important
+      -webkit-transition: none !important
+      -ms-transition: none !important
+      transition: none !important
+  color: $gray
+
+
+@media screen and (max-width: 360px)
+  html, body
+    min-width: 320px
+
+
+/* Type */
+html, input, select, textarea
+  font-size: 16pt
+
+@media screen and (max-width: 1680px)
+  html, input, select, textarea
+    font-size: 13pt
+
+@media screen and (max-width: 1280px)
+  html, input, select, textarea
+    font-size: 12pt
+
+@media screen and (max-width: 360px)
+  html, input, select, textarea
+    font-size: 11pt
+
+body, input, select, textarea
+  font-family: Arial, Helvetica, sans-serif
+  font-weight: normal
+  line-height: 1.5em
+  letter-spacing: -0.015em
+a
+  -moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out
+  -webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out
+  -ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out
+  transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out
+  text-decoration: none
+  border-bottom: dotted 1px
+  &:hover
+    border-bottom-color: transparent !important
+
+
+strong, b
+  font-weight: bold
+
+em, i
+  font-style: italic
+
+p
+  margin: 0 0 2em 0
+
+h1, h2, h3, h4, h5, h6
+  font-weight: normal
+  line-height: 1em
+  margin: 0 0 1em 0
+  letter-spacing: -0.0125em
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
+  color: inherit
+  text-decoration: none
+  border-bottom: none
+
+@media screen and (max-width: 980px)
+  h1 br, h2 br, h3 br, h4 br, h5 br, h6 br
+    display: none
+
+h2
+  font-size: 1.75em
+  line-height: 1.5em
+
+h3
+  font-size: 1.5em
+  line-height: 1.5em
+
+h4
+  font-size: 1.1em
+  line-height: 1.5em
+
+h5
+  font-size: 0.9em
+  line-height: 1.5em
+
+h6
+  font-size: 0.7em
+  line-height: 1.5em
+
+@media screen and (max-width: 736px)
+  h2
+    font-size: 1.25em
+  h3
+    font-size: 1.2em
+  h4
+    font-size: 1em
+
+a
+  color: inherit
+  border-bottom-color: #d6d6d6
+  &:hover
+    color: #4696e5
+
+strong, b, h1, h2, h3, h4, h5, h6
+  color: $gray
+
+
+/* Button
+input
+  &[type="submit"], &[type="reset"], &[type="button"]
+    -moz-appearance: none
+    -webkit-appearance: none
+    -ms-appearance: none
+    appearance: none
+    -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out
+    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out
+    -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out
+    border-radius: 6px
+    border: 0
+    cursor: pointer
+    display: inline-block
+    font-weight: bold
+    height: 2.85em
+    line-height: 2.95em
+    padding: 0 1.75em
+    text-align: center
+    text-decoration: none
+    white-space: nowrap
+
+button, .button
+  -moz-appearance: none
+  -webkit-appearance: none
+  -ms-appearance: none
+  appearance: none
+  -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out
+  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out
+  -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out
+  border-radius: 6px
+  border: 0
+  cursor: pointer
+  display: inline-block
+  font-weight: bold
+  height: 2.85em
+  line-height: 2.95em
+  padding: 0 1.75em
+  text-align: center
+  text-decoration: none
+  white-space: nowrap
+
+input
+  &[type="submit"].icon, &[type="reset"].icon, &[type="button"].icon
+    padding-left: 1.35em
+
+button.icon, .button.icon
+  padding-left: 1.35em
+
+input
+  &[type="submit"].icon:before, &[type="reset"].icon:before, &[type="button"].icon:before
+    margin-right: 0.5em
+
+button.icon:before, .button.icon:before
+  margin-right: 0.5em
+
+input
+  &[type="submit"].fit, &[type="reset"].fit, &[type="button"].fit
+    display: block
+    margin: 0 0 1em 0
+    width: 100%
+
+button.fit, .button.fit
+  display: block
+  margin: 0 0 1em 0
+  width: 100%
+
+input
+  &[type="submit"]
+    &.disabled, &:disabled
+      -moz-pointer-events: none
+      -webkit-pointer-events: none
+      -ms-pointer-events: none
+      pointer-events: none
+      cursor: default
+      opacity: 0.25
+  &[type="reset"]
+    &.disabled, &:disabled
+      -moz-pointer-events: none
+      -webkit-pointer-events: none
+      -ms-pointer-events: none
+      pointer-events: none
+      cursor: default
+      opacity: 0.25
+  &[type="button"]
+    &.disabled, &:disabled
+      -moz-pointer-events: none
+      -webkit-pointer-events: none
+      -ms-pointer-events: none
+      pointer-events: none
+      cursor: default
+      opacity: 0.25
+
+button
+  &.disabled, &:disabled
+    -moz-pointer-events: none
+    -webkit-pointer-events: none
+    -ms-pointer-events: none
+    pointer-events: none
+    cursor: default
+    opacity: 0.25
+
+.button
+  &.disabled, &:disabled
+    -moz-pointer-events: none
+    -webkit-pointer-events: none
+    -ms-pointer-events: none
+    pointer-events: none
+    cursor: default
+    opacity: 0.25
+
+@media screen and (max-width: 480px) and (orientation: portrait)
+  input
+    &[type="submit"], &[type="reset"], &[type="button"]
+      padding: 0
+
+  button, .button
+    padding: 0
+
+input
+  &[type="submit"], &[type="reset"], &[type="button"]
+    background-color: transparent
+    color: $gray !important
+    box-shadow: inset 0 0 0 2px $gray
+
+button, .button
+  background-color: transparent
+  color: $gray !important
+  box-shadow: inset 0 0 0 2px $gray
+
+input
+  &[type="submit"]:hover, &[type="reset"]:hover, &[type="button"]:hover
+    background-color: $gray
+
+button:hover, .button:hover
+  background-color: $gray
+
+input
+  &[type="submit"]:active, &[type="reset"]:active, &[type="button"]:active
+    background-color: $gray
+
+button:active, .button:active
+  background-color: $gray
+
+input
+  &[type="submit"].special, &[type="reset"].special, &[type="button"].special
+    box-shadow: none
+    background-color: $black
+    color: $black !important
+
+button.special, .button.special
+  box-shadow: none
+  background-color: $black
+  color: $black !important
+
+input
+  &[type="submit"].special:hover, &[type="reset"].special:hover, &[type="button"].special:hover
+    background-color: $black
+
+button.special:hover, .button.special:hover
+  background-color: $black
+
+input
+  &[type="submit"].special:active, &[type="reset"].special:active, &[type="button"].special:active
+    background-color: $black
+
+button.special:active, .button.special:active
+  background-color: $black
+
+
+/* Form */
+form
+  margin: 0 0 2em 0
+
+label
+  display: block
+  font-size: 0.9em
+  font-weight: bold
+  margin: 0 0 1em 0
+
+input
+  &[type="text"], &[type="password"], &[type="email"]
+    -moz-appearance: none
+    -webkit-appearance: none
+    -ms-appearance: none
+    appearance: none
+    border-radius: 6px
+    border: none
+    border-style: solid
+    border-width: 1px
+    color: inherit
+    display: block
+    outline: 0
+    padding: 0 1em
+    text-decoration: none
+    width: 100%
+
+select, textarea
+  -moz-appearance: none
+  -webkit-appearance: none
+  -ms-appearance: none
+  appearance: none
+  border-radius: 6px
+  border: none
+  border-style: solid
+  border-width: 1px
+  color: inherit
+  display: block
+  outline: 0
+  padding: 0 1em
+  text-decoration: none
+  width: 100%
+
+select:invalid, textarea:invalid
+  box-shadow: none
+
+input
+  &[type="text"], &[type="password"], &[type="email"]
+    height: 2.75em
+
+textarea
+  padding: 0.75em 1em
+
+label
+  color: $gray
+
+input
+  &[type="text"], &[type="password"], &[type="email"]
+    color: inherit
+    background-color: $gray
+    border-color: #e6e6e6
+
+select, textarea
+  color: inherit
+  background-color: $gray
+  border-color: #e6e6e6
+
+
+/* Image */
+.image
+  border-radius: 6px
+  border: 0
+  display: inline-block
+  position: relative
+  overflow: hidden
+
+  img
+    border-radius: 6px
+    display: block
+
+  &.main
+    display: block
+    margin: 0 0 3em 0
+    width: 100%
+    img
+      width: 100%
+  &.phone
+    box-shadow: none
+    border-radius: 0
+    margin: 0 0 3em 0
+    width: 13em
+    img
+      border-radius: 0
+      display: block
+      position: relative
+      width: 100%
+    .inner, &:before, &:after
+      display: block
+      border: solid 2px $gray
+    .inner
+      position: relative
+      &:before, &:after
+        content: ''
+        position: absolute
+        left: 50%
+      &:before
+        top: -1.375em
+        margin-left: -1em
+        width: 2em
+        height: 0.25em
+        border-radius: 0.5em
+        background: $gray
+      &:after
+        bottom: -2.75em
+        margin-left: -1em
+        width: 2em
+        height: 2em
+        border-radius: 100%
+        border: solid 2px $gray
+    &:before, &:after
+      content: ''
+    &:before
+      height: 2.5em
+      border-radius: 1em 1em 0 0
+      border-bottom: 0
+    &:after
+      height: 3.5em
+      border-radius: 0 0 1em 1em
+      border-top: 0
+    box-shadow: none
+    .inner, &:before, &:after
+      border-color: #e6e6e6
+    .inner
+      &:before
+        background: #e6e6e6
+      &:after
+        border-color: #e6e6e6
+  box-shadow: 0 0 0 4px $white, 0 0 0 5px #e6e6e6
+
+
+/* List */
+ul
+  list-style: disc
+  margin: 0 0 2em 0
+  padding-left: 1em
+  li
+    padding-left: 0.5em
+  &.alt
+    list-style: none
+    padding-left: 0
+    li
+      border-top-style: solid
+      border-top-width: 1px
+      padding: 0.5em 0
+      &:first-child
+        border-top: 0
+        padding-top: 0
+
+  &.actions
+    cursor: default
+    list-style: none
+    padding-left: 0
+    li
+      display: inline-block
+      padding: 0 1em 0 0
+      vertical-align: middle
+      &:last-child
+        padding-right: 0
+    &.small li
+      padding: 0 0.5em 0 0
+    &.vertical
+      li
+        display: block
+        padding: 1em 0 0 0
+        &:first-child
+          padding-top: 0
+        > *
+          margin-bottom: 0
+      &.small li
+        padding: 0.5em 0 0 0
+        &:first-child
+          padding-top: 0
+    &.fit
+      display: table
+      margin-left: -1em
+      padding: 0
+      table-layout: fixed
+      width: calc(100% + 1em)
+      li
+        display: table-cell
+        padding: 0 0 0 1em
+        > *
+          margin-bottom: 0
+      &.small
+        margin-left: -0.5em
+        width: calc(100% + 0.5em)
+        li
+          padding: 0 0 0 0.5em
+
+@media screen and (max-width: 736px)
+  ul.icons.major li
+    padding: 0 1.25em 0 0
+    .icon:before
+      font-size: 1.75rem
+
+
+@media screen and (max-width: 480px) and (orientation: portrait)
+  ul.actions
+    margin: 0 0 2em 0
+    li
+      padding: 1em 0 0 0
+      display: block
+      text-align: center
+      width: 100%
+      &:first-child
+        padding-top: 0
+      > *
+        width: 100%
+        margin: 0 !important
+        &.icon:before
+          margin-left: -2em
+    &.small li
+      padding: 0.5em 0 0 0
+      &:first-child
+        padding-top: 0
+
+ul.alt > li
+  border-top-color: #e6e6e6
+
+
+/* Section */
+section.special
+  text-align: center
+
+
+/* Spotlight */
+.spotlight
+  display: -moz-flex
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  -moz-align-items: center
+  -webkit-align-items: center
+  -ms-align-items: center
+  align-items: center
+  margin: 0 0 2em 0
+  .image
+    width: 30%
+    border-radius: 100%
+    margin: 0 3em 0 0
+    display: block
+    img
+      display: block
+      border-radius: 100%
+      width: 100%
+  .content
+    width: 70%
+    > :last-child
+      margin-bottom: 0
+  &:nth-child(2n)
+    -moz-flex-direction: row-reverse
+    -webkit-flex-direction: row-reverse
+    -ms-flex-direction: row-reverse
+    flex-direction: row-reverse
+    .image
+      margin: 0 0 0 3em
+    .content
+      text-align: right
+
+@media screen and (max-width: 736px) and (orientation: landscape)
+  .spotlight
+    .image
+      margin: 0 2em 0 0
+    &:nth-child(2n) .image
+      margin: 0 0 0 2em
+
+@media screen and (max-width: 736px) and (orientation: portrait)
+  .spotlight
+    -moz-flex-direction: column !important
+    -webkit-flex-direction: column !important
+    -ms-flex-direction: column !important
+    flex-direction: column !important
+
+    .image
+      width: 100%
+      max-width: 60%
+      margin: 0 0 2em 0 !important
+
+    .content
+      width: 100%
+      text-align: center !important
+
+
+/* Wrapper */
+.wrapper
+  padding: 4.5em 0 2.5em 0
+  background-color: $white
+  border-bottom: solid 2px $cream
+  > .inner
+    margin-left: auto
+    margin-right: auto
+    width: 50em
+    &.alt > *
+      border-top: solid 2px $cream
+      margin-bottom: 0
+      margin-top: 3em
+      padding-top: 3em
+      &:first-child
+        border-top: 0
+        margin-top: 0
+        padding-top: 0
+  &.style1
+    background-color: #4696e5
+    color: #d0e4f8
+    input
+      &[type="submit"], &[type="reset"], &[type="button"]
+        background-color: transparent
+        color: $white !important
+        box-shadow: inset 0 0 0 2px $gray
+    button, .button
+      background-color: transparent
+      color: $gray !important
+      box-shadow: inset 0 0 0 2px $black
+    input
+      &[type="submit"]:hover, &[type="reset"]:hover, &[type="button"]:hover
+        background-color: $gray
+    button:hover, .button:hover
+      background-color: $gray
+    input
+      &[type="submit"]:active, &[type="reset"]:active, &[type="button"]:active
+        background-color: $gray
+    button:active, .button:active
+      background-color: $gray
+    input
+      &[type="submit"].special, &[type="reset"].special, &[type="button"].special
+        box-shadow: none
+        background-color: $white
+        color: #4696e5 !important
+    button.special, .button.special
+      box-shadow: none
+      background-color: $white
+      color: #4696e5 !important
+    label
+      color: $white
+    input
+      &[type="text"], &[type="password"], &[type="email"]
+        color: inherit
+        background-color: $gray
+        border-color: $gray
+    select, textarea
+      color: inherit
+      background-color: $gray
+      border-color: $gray
+    input
+      &[type="text"]:focus, &[type="password"]:focus, &[type="email"]:focus
+        border-color: $black
+        box-shadow: 0 0 0 1px $black
+        color: $black !important
+    select:focus, textarea:focus
+      border-color: $black
+      box-shadow: 0 0 0 1px $black
+      color: $black !important
+    .select-wrapper:before
+      color: $gray
+    \::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder, .formerize-placeholder
+      color: #b5d5f4 !important
+    .icon
+      color: #b5d5f4
+    .image
+      box-shadow: 0 0 0 4px #4696e5, 0 0 0 5px $gray
+      &.phone
+        box-shadow: none
+        .inner, &:before, &:after
+          border-color: $gray
+        .inner
+          &:before
+            background: $gray
+          &:after
+            border-color: $gray
+    ul.alt > li
+      border-top-color: $gray
+
+    input, select, textarea
+      color: #d0e4f8
+    a
+      color: inherit
+      border-bottom-color: $gray
+      color: $white
+    strong, b, h1, h2, h3, h4, h5, h6
+      color: $gray
+
+
+@media screen and (max-width: 980px)
+  .wrapper
+    padding: 4em 4em 2em 4em
+    > .inner
+      width: 100%
+
+@media screen and (max-width: 736px) and (orientation: landscape)
+  .wrapper
+    padding: 3em 3em 1em 3em
+
+@media screen and (max-width: 736px) and (orientation: portrait)
+  .wrapper
+    padding: 3em 1.5em 1em 1.5em
+
+@media screen and (max-width: 480px) and (orientation: landscape)
+  .wrapper
+    padding: 2em 1.5em 0.1em 1.5em
+
+@media screen and (max-width: 480px) and (orientation: portrait)
+  .wrapper
+    padding: 2em 1em 0.1em 1em
+
+@media screen and (max-width: 980px)
+  #header
+    height: auto
+    min-height: 0
+    .content
+      margin: -2em 4em 0 0
+
+@media screen and (max-width: 980px) and (orientation: portrait)
+  #header
+    padding: 6em 3em 4em 3em
+    -moz-flex-direction: column-reverse
+    -webkit-flex-direction: column-reverse
+    -ms-flex-direction: column-reverse
+    flex-direction: column-reverse
+    .content
+      display: block
+      width: 100%
+      text-align: center
+      margin: 0 0 2em 0
+    .image
+      overflow: hidden
+
+@media screen and (max-width: 736px)
+  #header
+    h1
+      font-size: 2em
+    p
+      font-size: 1em
+      line-height: inherit
+
+@media screen and (max-width: 736px) and (orientation: landscape)
+  #header
+    padding: 2em 2em 0.1em 2em
+    .content
+      margin: 0 2em 2em 0
+    .image
+      font-size: 0.8em
+      width: 15em
+      max-width: 20vw
+      .inner, &:before, &:after
+        font-size: 0.8em
+
+@media screen and (max-width: 736px) and (orientation: portrait)
+  #header
+    padding: 3em 1.5em 1em 1.5em
+    .image
+      font-size: 0.6em
+      max-width: 60vw
+
+@media screen and (max-width: 480px) and (orientation: landscape)
+  #header
+    padding: 2em 1.5em 0.1em 1.5em
+    .image
+      font-size: 0.7em
+    .actions
+      font-size: 0.8em
+
+@media screen and (max-width: 480px) and (orientation: portrait)
+  #header
+    padding: 2em 1em 0.1em 1em
+
+
+@media screen and (max-width: 980px) and (orientation: portrait)
+  body.is-loading #header
+    .content
+      -moz-transform: none
+      -webkit-transform: none
+      -ms-transform: none
+      transform: none
+      opacity: 1
+    .image
+      -moz-transform: translateY(2em)
+      -webkit-transform: translateY(2em)
+      -ms-transform: translateY(2em)
+      transform: translateY(2em)
+
+/* Main */
+#main
+  padding: 4em 0 2em 0
+@media screen and (max-width: 736px)
+  #main
+    padding: 3em 0 1em 0
