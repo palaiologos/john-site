@@ -1,0 +1,184 @@
+@import "variables/variables"
+
+/* Header */
+#header-wrap
+  display: block
+  width: 100%
+  overflow: hidden
+
+
+#header
+  padding: 1.5rem 0
+  overflow: hidden
+  text-transform: uppercase
+  background: $white
+
+#logo
+  a
+    display: block
+    height: 36px
+    float: left
+    text-decoration: none
+
+  img
+    max-height: 100%
+    float: left
+    margin-right: 0.8rem
+
+  a span
+    font-family: 'Montserrat', sans-serif
+    font-size: 1.25rem
+    color: #171818
+    display: block
+    float: left
+    letter-spacing: -.02rem
+    line-height: 1
+    margin-top: 0.52rem
+
+#nav
+  display: block
+  float: right
+  font-family: 'Montserrat', sans-serif
+  font-size: 1rem
+  padding-top: 0.438rem
+  li
+    display: inline-block
+    padding: 0 0 0 3rem
+    a
+      color: #a2a2a2
+      &:hover
+        color: #525252
+
+    &#current a
+      color: $black
+
+  .fa-angle-right
+    display: none
+
+
+/* Footer */
+#footer
+  background: $black
+  padding: 3rem 0
+
+
+#social
+  display: block
+  width: 80%
+  text-align: center
+  color: $white
+  margin: 0 auto
+
+  li
+    display: inline-block
+    margin: 0 .5rem
+
+  a
+    border: 2px solid #616161
+    border-radius: 50%
+    display: inline-block
+    letter-spacing: normal
+    text-align: center
+    width: 2.5rem
+    height: 2.5rem
+    i
+      color: $white
+      font-size: 1.5rem
+      line-height: 1
+      text-align: center
+      padding-top: .5rem
+      transition: all .4s ease 0s
+
+    &:hover .fa-github
+      color: $gray
+
+    &:hover .fa-instagram
+      color: #517fa4
+
+    &:hover .fa-linkedin
+      color: #007bb6
+
+    &:hover .fa-twitter
+      color: #00aced
+
+#copyright
+  text-align: center
+  font-size: .9rem
+  color: #bcbcbc
+  margin: 2rem 0 0
+
+#pull
+  display: none
+  text-indent: -9999px
+
+
+/* Media Screen */
+@media screen and (max-width: $mobile-width)
+  #pull
+    margin-top: 5px
+
+  #social
+    li
+      display: inline-block
+      margin: 0 .6rem
+
+    a
+      width: 2rem
+      height: 2rem
+      i
+        padding-top: .4rem
+        font-size: 1.2rem
+
+
+@media only screen and (max-width: 719px)
+  .container-12
+    width: 90%
+
+    .grid-12
+      width: 100%
+      margin-left: 0
+      margin-right: 0
+
+  #responsive-nav
+    position: relative
+
+  #logo a span
+    margin-top: .6rem
+
+  #nav
+    // display: none
+    height: auto
+    float: left
+    font-family: 'Montserrat', sans-serif
+    font-size: 16px
+    text-align: left
+    margin-top: 20px
+    background: $white
+    clear: left
+    width: 100%
+    li
+      display: block
+      border-bottom: solid 1px #eaeaea
+      margin: 0
+      padding: 0
+      a
+        display: block
+        padding: 8px 0
+        color: $black
+        &:active
+          color: $white
+          background: $black
+          padding: 12px 6px
+
+    li#current a:active
+      color: #333
+      background: $white
+      padding: 8px 0
+
+    li:last-child
+      border: 0
+
+    .fa-angle-right
+      display: block
+      float: right
+      margin-top: 1px
