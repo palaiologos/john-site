@@ -1,0 +1,2514 @@
+/* Media Screen */
+/* Colors */
+/* line 3, /home/palaiologos/Odin/john-site/app/assets/stylesheets/about.sass */
+#about {
+  max-width: 45rem;
+  display: block;
+  margin: -5rem auto 3rem;
+  overflow: hidden;
+}
+
+/* line 9, /home/palaiologos/Odin/john-site/app/assets/stylesheets/about.sass */
+#about p {
+  max-width: 45rem;
+  text-align: center;
+  display: block;
+  margin: 0 auto 1.5rem;
+  font-size: 1.1rem;
+}
+
+/* line 17, /home/palaiologos/Odin/john-site/app/assets/stylesheets/about.sass */
+#about ul {
+  text-align: left;
+  font-size: 1.1rem;
+}
+/* line 20, /home/palaiologos/Odin/john-site/app/assets/stylesheets/about.sass */
+#about h1 {
+  text-align: center;
+  margin: 1rem 0 3rem;
+}
+/* line 23, /home/palaiologos/Odin/john-site/app/assets/stylesheets/about.sass */
+#about h3 {
+  text-align: left;
+  margin: 2rem 0 1rem;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+/* line 29, /home/palaiologos/Odin/john-site/app/assets/stylesheets/about.sass */
+#about p a {
+  padding-bottom: 1px;
+  border-bottom: solid 1px #171818;
+}
+/* line 32, /home/palaiologos/Odin/john-site/app/assets/stylesheets/about.sass */
+#about p a:hover {
+  border-bottom: solid 1px #5295d4;
+}
+
+/* line 35, /home/palaiologos/Odin/john-site/app/assets/stylesheets/about.sass */
+#about-this {
+  text-align: center;
+}
+
+/* line 38, /home/palaiologos/Odin/john-site/app/assets/stylesheets/about.sass */
+#about-this-p {
+  text-align: center;
+}
+
+@media only screen and (max-width: 550px) {
+  /* line 42, /home/palaiologos/Odin/john-site/app/assets/stylesheets/about.sass */
+  html, body {
+    font-size: 13px !important;
+  }
+
+  /* line 45, /home/palaiologos/Odin/john-site/app/assets/stylesheets/about.sass */
+  #about p, #contact p {
+    margin: 0 auto 1.5rem;
+  }
+
+  /* line 47, /home/palaiologos/Odin/john-site/app/assets/stylesheets/about.sass */
+  #about h3, .single#blog h3 {
+    margin: 0 auto 1.5rem;
+    text-align: left;
+  }
+}
+/* line 51, /home/palaiologos/Odin/john-site/app/assets/stylesheets/about.sass */
+.body-section {
+  padding-top: 72px;
+  padding-bottom: 72px;
+  border-bottom: 2px solid #828282;
+}
+/* line 56, /home/palaiologos/Odin/john-site/app/assets/stylesheets/about.sass */
+.body-section .body-text {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+/* line 60, /home/palaiologos/Odin/john-site/app/assets/stylesheets/about.sass */
+.image-container {
+  text-align: center;
+}
+/* line 63, /home/palaiologos/Odin/john-site/app/assets/stylesheets/about.sass */
+.image-container img {
+  margin: 12px 0;
+  height: auto;
+  max-width: 266px;
+}
+@media screen and (min-width: 720px) {
+  /* line 63, /home/palaiologos/Odin/john-site/app/assets/stylesheets/about.sass */
+  .image-container img {
+    max-width: none;
+  }
+}
+/* Media Screen */
+/* Colors */
+/* line 3, /home/palaiologos/Odin/john-site/app/assets/stylesheets/contact.sass */
+form {
+  margin: 0 0 2em 0;
+}
+/* line 5, /home/palaiologos/Odin/john-site/app/assets/stylesheets/contact.sass */
+form .field {
+  margin: 0 0 1em 0;
+}
+/* line 7, /home/palaiologos/Odin/john-site/app/assets/stylesheets/contact.sass */
+form .field.half {
+  width: 50%;
+  float: left;
+  padding: 0 0 0 0.75em;
+}
+/* line 11, /home/palaiologos/Odin/john-site/app/assets/stylesheets/contact.sass */
+form .field.half.first {
+  padding: 0 0.75em 0 0;
+}
+/* line 13, /home/palaiologos/Odin/john-site/app/assets/stylesheets/contact.sass */
+form > .actions {
+  margin: 2em 0 0 0 !important;
+}
+
+@media screen and (max-width: 736px) {
+  /* line 17, /home/palaiologos/Odin/john-site/app/assets/stylesheets/contact.sass */
+  form .field.half {
+    width: 100%;
+    float: none;
+    padding: 0;
+  }
+  /* line 21, /home/palaiologos/Odin/john-site/app/assets/stylesheets/contact.sass */
+  form .field.half.first {
+    padding: 0;
+  }
+}
+/* line 24, /home/palaiologos/Odin/john-site/app/assets/stylesheets/contact.sass */
+label {
+  color: #000000 !important;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 0 0 0.7em 0;
+  display: block;
+  font-size: 1.1em;
+}
+
+/* line 33, /home/palaiologos/Odin/john-site/app/assets/stylesheets/contact.sass */
+input[type="text"], input[type="password"], input[type="email"], input[type="tel"] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background: #fbfbfb;
+  border-radius: 0.25em;
+  border: none;
+  border: solid 1px #000000 !important;
+  color: #000000 !important;
+  display: block;
+  outline: 0;
+  padding: 0 1em;
+  text-decoration: none;
+  width: 100%;
+}
+
+/* line 49, /home/palaiologos/Odin/john-site/app/assets/stylesheets/contact.sass */
+select, textarea {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background: #fbfbfb;
+  border-radius: 0.25em;
+  border: none;
+  border: solid 1px #000000 !important;
+  color: #000000 !important;
+  display: block;
+  outline: 0;
+  padding: 0 1em;
+  text-decoration: none;
+  width: 100%;
+}
+
+/* line 66, /home/palaiologos/Odin/john-site/app/assets/stylesheets/contact.sass */
+input[type="text"]:invalid, input[type="password"]:invalid, input[type="email"]:invalid, input[type="tel"]:invalid {
+  box-shadow: none;
+}
+
+/* line 69, /home/palaiologos/Odin/john-site/app/assets/stylesheets/contact.sass */
+select:invalid, textarea:invalid {
+  box-shadow: none;
+}
+
+/* line 73, /home/palaiologos/Odin/john-site/app/assets/stylesheets/contact.sass */
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="tel"]:focus {
+  border-color: #000000;
+  box-shadow: 0 0 0 1px #000000;
+}
+
+/* line 77, /home/palaiologos/Odin/john-site/app/assets/stylesheets/contact.sass */
+select:focus, textarea:focus {
+  border-color: #000000;
+  box-shadow: 0 0 0 1px #000000;
+}
+
+/* line 81, /home/palaiologos/Odin/john-site/app/assets/stylesheets/contact.sass */
+select option {
+  background-color: #eaeaea;
+  color: #000000;
+}
+
+/* line 85, /home/palaiologos/Odin/john-site/app/assets/stylesheets/contact.sass */
+select {
+  height: 2.75em;
+}
+
+/* line 88, /home/palaiologos/Odin/john-site/app/assets/stylesheets/contact.sass */
+textarea {
+  padding: 0.75em 1em;
+}
+
+/* line 91, /home/palaiologos/Odin/john-site/app/assets/stylesheets/contact.sass */
+body.is-ie textarea {
+  min-height: 10em;
+}
+
+/* line 94, /home/palaiologos/Odin/john-site/app/assets/stylesheets/contact.sass */
+::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder, .formerize-placeholder {
+  color: #fbfbfb !important;
+  opacity: 1;
+}
+
+/* line 99, /home/palaiologos/Odin/john-site/app/assets/stylesheets/contact.sass */
+#one h2 {
+  color: #fbfbfb;
+}
+
+/* line 103, /home/palaiologos/Odin/john-site/app/assets/stylesheets/contact.sass */
+.inner p {
+  text-align: center;
+}
+
+/* line 106, /home/palaiologos/Odin/john-site/app/assets/stylesheets/contact.sass */
+.actions {
+  text-align: center;
+}
+
+/* line 110, /home/palaiologos/Odin/john-site/app/assets/stylesheets/contact.sass */
+.contact-header {
+  color: #828282;
+}
+
+/* line 113, /home/palaiologos/Odin/john-site/app/assets/stylesheets/contact.sass */
+.contact-text {
+  color: #828282;
+}
+
+/* line 116, /home/palaiologos/Odin/john-site/app/assets/stylesheets/contact.sass */
+.white-background {
+  background-color: #fbfbfb !important;
+}
+
+/* Error Messages */
+/* line 121, /home/palaiologos/Odin/john-site/app/assets/stylesheets/contact.sass */
+.error-item {
+  color: red !important;
+}
+
+/* line 124, /home/palaiologos/Odin/john-site/app/assets/stylesheets/contact.sass */
+.contact-submit {
+  color: #000000 !important;
+}
+/* Media Screen */
+/* Colors */
+/* Header */
+/* line 4, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+#header-wrap {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* line 10, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+#header {
+  padding: 1.5rem 0;
+  overflow: hidden;
+  text-transform: uppercase;
+  background: #fbfbfb;
+}
+
+/* line 17, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+#logo a {
+  display: block;
+  height: 36px;
+  float: left;
+  text-decoration: none;
+}
+/* line 23, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+#logo img {
+  max-height: 100%;
+  float: left;
+  margin-right: 0.8rem;
+}
+/* line 28, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+#logo a span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  color: #000000;
+  display: block;
+  float: left;
+  letter-spacing: -0.02rem;
+  line-height: 1;
+  margin-top: 0.52rem;
+}
+
+/* line 38, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+#nav {
+  display: block;
+  float: right;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  padding-top: 0.438rem;
+  padding-right: 2em;
+}
+/* line 45, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+#nav li {
+  display: inline-block;
+  padding: 0 0 0 3rem;
+}
+/* line 48, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+#nav li a {
+  color: #a2a2a2;
+}
+/* line 50, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+#nav li a:hover {
+  color: #525252;
+}
+/* line 53, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+#nav li#current a {
+  color: #000000;
+}
+/* line 56, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+#nav .fa-angle-right {
+  display: none;
+}
+
+/* Footer */
+/* line 61, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+#footer {
+  background: #000000;
+  padding: 3rem 0;
+}
+
+/* line 66, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+#social {
+  display: block;
+  width: 80%;
+  text-align: center;
+  color: #fbfbfb;
+  margin: 0 auto;
+}
+/* line 73, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+#social li {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+/* line 77, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+#social a {
+  border: 2px solid #616161;
+  border-radius: 50%;
+  display: inline-block;
+  letter-spacing: normal;
+  text-align: center;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+/* line 85, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+#social a i {
+  color: #fbfbfb;
+  font-size: 1.5rem;
+  line-height: 1;
+  text-align: center;
+  padding-top: 0.5rem;
+  transition: all 0.4s ease 0s;
+}
+/* line 93, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+#social a:hover .fa-github {
+  color: #828282;
+}
+/* line 96, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+#social a:hover .fa-instagram {
+  color: #517fa4;
+}
+/* line 99, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+#social a:hover .fa-linkedin {
+  color: #007bb6;
+}
+/* line 102, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+#social a:hover .fa-twitter {
+  color: #00aced;
+}
+
+/* line 105, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+#copyright {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #bcbcbc;
+  margin: 2rem 0 0;
+}
+
+/* Media Screen */
+@media screen and (max-width: 480px) {
+  /* line 114, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+  #pull {
+    margin-top: 5px;
+  }
+
+  /* line 118, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+  #social li {
+    display: inline-block;
+    margin: 0 0.6rem;
+  }
+  /* line 122, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+  #social a {
+    width: 2rem;
+    height: 2rem;
+  }
+  /* line 125, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+  #social a i {
+    padding-top: 0.4rem;
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 720px) {
+  /* line 132, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+  .container-12 {
+    width: 90%;
+  }
+  /* line 135, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+  .container-12 .grid-12 {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* line 140, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+  #responsive-nav {
+    position: relative;
+  }
+
+  /* line 143, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+  #logo a span {
+    margin-top: 0.6rem;
+  }
+
+  /* line 146, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+  #nav {
+    display: block;
+    float: right;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    padding-top: 0.438rem;
+  }
+  /* line 152, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+  #nav li {
+    display: inline-block;
+    padding: 0 0 0 3rem;
+  }
+  /* line 155, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+  #nav li a {
+    color: #a2a2a2;
+  }
+  /* line 157, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+  #nav li a:hover {
+    color: #525252;
+  }
+  /* line 160, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+  #nav li#current a {
+    color: #000000;
+  }
+  /* line 163, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+  #nav .fa-angle-right {
+    display: none;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 720px) {
+  /* line 168, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+  .container-12 {
+    width: 100%;
+  }
+  /* line 171, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+  .container-12 .grid-12 {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* line 176, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+  #logo a span {
+    margin-top: 0.5rem;
+  }
+
+  /* line 179, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+  #nav {
+    display: block;
+    float: right;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    padding-top: 0.438rem;
+  }
+  /* line 185, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+  #nav li {
+    display: inline-block;
+    padding: 0 0 0 3rem;
+  }
+  /* line 188, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+  #nav li a {
+    color: #a2a2a2;
+  }
+  /* line 190, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+  #nav li a:hover {
+    color: #525252;
+  }
+  /* line 193, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+  #nav li#current a {
+    color: #000000;
+  }
+  /* line 196, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+  #nav .fa-angle-right {
+    display: none;
+  }
+}
+@media screen and (min-width: 720px) and (max-width: 960px) {
+  /* line 201, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+  #logo a span {
+    margin-top: 0.5rem;
+  }
+
+  /* line 204, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+  #nav {
+    display: block;
+    float: right;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    padding-top: 0.438rem;
+  }
+  /* line 210, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+  #nav li {
+    display: inline-block;
+    padding: 0 0 0 3rem;
+  }
+  /* line 213, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+  #nav li a {
+    color: #a2a2a2;
+  }
+  /* line 215, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+  #nav li a:hover {
+    color: #525252;
+  }
+  /* line 218, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+  #nav li#current a {
+    color: #000000;
+  }
+  /* line 221, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+  #nav .fa-angle-right {
+    display: none;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1199px) {
+  /* line 226, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+  .container-12 {
+    width: 960px;
+  }
+  /* line 229, /home/palaiologos/Odin/john-site/app/assets/stylesheets/header_and_footer.sass */
+  .container-12 .grid-12 {
+    width: 940px;
+  }
+}
+/* Media Screen */
+/* Colors */
+/* Reset */
+/* line 4, /home/palaiologos/Odin/john-site/app/assets/stylesheets/home.sass */
+html, body, div, span,
+iframe, h1, h2, h3,
+h4, p, a, img,
+strong, i, center, ul,
+li, form, label,
+footer, header,
+nav, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  font: inherit;
+}
+
+/* line 20, /home/palaiologos/Odin/john-site/app/assets/stylesheets/home.sass */
+footer, header,
+hgroup, menu,
+nav, section {
+  display: block;
+}
+
+/* General */
+/* line 27, /home/palaiologos/Odin/john-site/app/assets/stylesheets/home.sass */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 31, /home/palaiologos/Odin/john-site/app/assets/stylesheets/home.sass */
+body {
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  background: #fbfbfb;
+  color: #828282;
+}
+
+/* line 40, /home/palaiologos/Odin/john-site/app/assets/stylesheets/home.sass */
+h1, h2, h3, h4, h5, h6 {
+  color: #000000;
+  font-weight: normal;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* line 45, /home/palaiologos/Odin/john-site/app/assets/stylesheets/home.sass */
+h1 {
+  font-size: 2.25rem;
+  margin-bottom: 3rem;
+  line-height: 1.4;
+}
+
+/* line 50, /home/palaiologos/Odin/john-site/app/assets/stylesheets/home.sass */
+h2 {
+  font-size: 2.25rem;
+  margin-bottom: 3rem;
+  line-height: 1.4;
+}
+
+/* line 55, /home/palaiologos/Odin/john-site/app/assets/stylesheets/home.sass */
+h3 {
+  line-height: 1.4;
+  font-size: 1.35rem;
+  font-family: "Open Sans", sans-serif;
+  display: block;
+  color: #000000;
+}
+
+/* line 62, /home/palaiologos/Odin/john-site/app/assets/stylesheets/home.sass */
+a {
+  color: #333;
+  text-decoration: none;
+  outline: 0;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+/* line 71, /home/palaiologos/Odin/john-site/app/assets/stylesheets/home.sass */
+a:hover,
+a:focus {
+  color: #5295d4;
+}
+
+/* line 76, /home/palaiologos/Odin/john-site/app/assets/stylesheets/home.sass */
+::selection {
+  background: #000000;
+  color: #fbfbfb;
+}
+
+/* line 80, /home/palaiologos/Odin/john-site/app/assets/stylesheets/home.sass */
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+/* line 88, /home/palaiologos/Odin/john-site/app/assets/stylesheets/home.sass */
+.button {
+  display: inline-block;
+  font-size: 1.125rem;
+  text-align: center;
+  padding: 0.5em 1rem;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  border: solid 2px #828282;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+/* line 102, /home/palaiologos/Odin/john-site/app/assets/stylesheets/home.sass */
+.button:hover {
+  border: solid 2px #5295d4;
+  color: #5295d4;
+}
+
+/* line 106, /home/palaiologos/Odin/john-site/app/assets/stylesheets/home.sass */
+ul {
+  list-style: none;
+}
+
+/* Animations */
+/*!
+ *Animate.css - http://daneden.me/animate
+ *Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ *Copyright (c) 2014 Daniel Eden */
+/* line 126, /home/palaiologos/Odin/john-site/app/assets/stylesheets/home.sass */
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+/* line 131, /home/palaiologos/Odin/john-site/app/assets/stylesheets/home.sass */
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+/* line 134, /home/palaiologos/Odin/john-site/app/assets/stylesheets/home.sass */
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    -ms-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+/* line 157, /home/palaiologos/Odin/john-site/app/assets/stylesheets/home.sass */
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+@-webkit-keyframes fadeInDownBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInDownBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    -ms-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+/* line 180, /home/palaiologos/Odin/john-site/app/assets/stylesheets/home.sass */
+.fadeInDownBig {
+  -webkit-animation-name: fadeInDownBig;
+  animation-name: fadeInDownBig;
+}
+/* Media Screen */
+/* Colors */
+/* Banner */
+/* line 5, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+#banner {
+  width: 100%;
+  background: url("banner-image.jpg") no-repeat center center/cover;
+  height: 65%;
+  display: table;
+}
+/* line 10, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+#banner h1 {
+  display: block;
+  max-width: 50%;
+  color: #fbfbfb;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.75rem;
+  font-weight: normal;
+  text-align: left;
+}
+
+/* line 19, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+#banner-heading {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 2em 0;
+}
+
+/* line 24, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+#banner-full {
+  width: 100%;
+  height: 40%;
+  display: table;
+  display: block;
+  overflow: hidden;
+}
+/* line 30, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+#banner-full img {
+  width: 100%;
+  display: block;
+  margin-top: -40%;
+}
+
+/* line 35, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 39, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+*:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Basic */
+@-ms-viewport {
+  width: device-width;
+}
+/* line 47, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+body {
+  -ms-overflow-style: scrollbar;
+  background: #fbfbfb;
+  color: #828282;
+}
+/* line 50, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+body.is-loading * {
+  -moz-animation: none !important;
+  -webkit-animation: none !important;
+  -ms-animation: none !important;
+  animation: none !important;
+  -moz-transition: none !important;
+  -webkit-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
+}
+/* line 59, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+body.is-loading *:before, body.is-loading *:after {
+  -moz-animation: none !important;
+  -webkit-animation: none !important;
+  -ms-animation: none !important;
+  animation: none !important;
+  -moz-transition: none !important;
+  -webkit-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
+}
+
+@media screen and (max-width: 360px) {
+  /* line 72, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  html, body {
+    min-width: 320px;
+  }
+}
+/* Type */
+/* line 77, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+html, input, select, textarea {
+  font-size: 16pt;
+}
+
+@media screen and (max-width: 1680px) {
+  /* line 81, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  html, input, select, textarea {
+    font-size: 13pt;
+  }
+}
+@media screen and (max-width: 1280px) {
+  /* line 85, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  html, input, select, textarea {
+    font-size: 12pt;
+  }
+}
+@media screen and (max-width: 360px) {
+  /* line 89, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  html, input, select, textarea {
+    font-size: 11pt;
+  }
+}
+/* line 92, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+body, input, select, textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  line-height: 1.5em;
+  letter-spacing: -0.015em;
+}
+
+/* line 97, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+a {
+  -moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+  text-decoration: none;
+  border-bottom: dotted 1px;
+}
+/* line 104, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+a:hover {
+  border-bottom-color: transparent !important;
+}
+
+/* line 108, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+strong, b {
+  font-weight: bold;
+}
+
+/* line 111, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+em, i {
+  font-style: italic;
+}
+
+/* line 114, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+p {
+  margin: 0 0 2em 0;
+}
+
+/* line 117, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  line-height: 1em;
+  margin: 0 0 1em 0;
+  letter-spacing: -0.0125em;
+}
+
+/* line 123, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+@media screen and (max-width: 980px) {
+  /* line 129, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  h1 br, h2 br, h3 br, h4 br, h5 br, h6 br {
+    display: none;
+  }
+}
+/* line 132, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+h2 {
+  font-size: 1.75em;
+  line-height: 1.5em;
+}
+
+/* line 136, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+h3 {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+/* line 140, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+h4 {
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+/* line 144, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+h5 {
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
+
+/* line 148, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+h6 {
+  font-size: 0.7em;
+  line-height: 1.5em;
+}
+
+@media screen and (max-width: 736px) {
+  /* line 153, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  h2 {
+    font-size: 1.25em;
+  }
+
+  /* line 155, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  h3 {
+    font-size: 1.2em;
+  }
+
+  /* line 157, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  h4 {
+    font-size: 1em;
+  }
+}
+/* line 160, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+a {
+  color: inherit;
+  border-bottom-color: #d6d6d6;
+}
+/* line 163, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+a:hover {
+  color: #4696e5;
+}
+
+/* line 166, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+strong, b, h1, h2, h3, h4, h5, h6 {
+  color: #828282;
+}
+
+/* Button */
+/* line 172, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+input[type="submit"], input[type="reset"], input[type="button"] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  border-radius: 6px;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  height: 2.85em;
+  line-height: 2.95em;
+  padding: 0 1.75em;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* line 193, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+button, .button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  border-radius: 6px;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  height: 2.85em;
+  line-height: 2.95em;
+  padding: 0 1.75em;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* line 215, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+input[type="submit"].icon, input[type="reset"].icon, input[type="button"].icon {
+  padding-left: 1.35em;
+}
+
+/* line 218, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+button.icon, .button.icon {
+  padding-left: 1.35em;
+}
+
+/* line 222, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+input[type="submit"].icon:before, input[type="reset"].icon:before, input[type="button"].icon:before {
+  margin-right: 0.5em;
+}
+
+/* line 225, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+button.icon:before, .button.icon:before {
+  margin-right: 0.5em;
+}
+
+/* line 229, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+input[type="submit"].fit, input[type="reset"].fit, input[type="button"].fit {
+  display: block;
+  margin: 0 0 1em 0;
+  width: 100%;
+}
+
+/* line 234, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+button.fit, .button.fit {
+  display: block;
+  margin: 0 0 1em 0;
+  width: 100%;
+}
+
+/* line 241, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+input[type="submit"].disabled, input[type="submit"]:disabled {
+  -moz-pointer-events: none;
+  -webkit-pointer-events: none;
+  -ms-pointer-events: none;
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.25;
+}
+/* line 249, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+input[type="reset"].disabled, input[type="reset"]:disabled {
+  -moz-pointer-events: none;
+  -webkit-pointer-events: none;
+  -ms-pointer-events: none;
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.25;
+}
+/* line 257, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+input[type="button"].disabled, input[type="button"]:disabled {
+  -moz-pointer-events: none;
+  -webkit-pointer-events: none;
+  -ms-pointer-events: none;
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.25;
+}
+
+/* line 266, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+button.disabled, button:disabled {
+  -moz-pointer-events: none;
+  -webkit-pointer-events: none;
+  -ms-pointer-events: none;
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.25;
+}
+
+/* line 275, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.button.disabled, .button:disabled {
+  -moz-pointer-events: none;
+  -webkit-pointer-events: none;
+  -ms-pointer-events: none;
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.25;
+}
+
+@media screen and (max-width: 480px) and (orientation: portrait) {
+  /* line 285, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  input[type="submit"], input[type="reset"], input[type="button"] {
+    padding: 0;
+  }
+
+  /* line 288, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  button, .button {
+    padding: 0;
+  }
+}
+/* line 292, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+input[type="submit"], input[type="reset"], input[type="button"] {
+  background-color: transparent;
+  color: #fbfbfb !important;
+  box-shadow: inset 0 0 0 2px #828282;
+}
+
+/* line 297, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+button, .button {
+  background-color: transparent;
+  color: #828282 !important;
+  box-shadow: inset 0 0 0 2px #828282;
+}
+
+/* line 303, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
+  background-color: #eaeaea;
+}
+
+/* line 306, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+button:hover, .button:hover {
+  background-color: #eaeaea;
+}
+
+/* line 310, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+input[type="submit"]:active, input[type="reset"]:active, input[type="button"]:active {
+  background-color: #eaeaea;
+}
+
+/* line 313, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+button:active, .button:active {
+  background-color: #eaeaea;
+}
+
+/* line 317, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+input[type="submit"].special, input[type="reset"].special, input[type="button"].special {
+  box-shadow: none;
+  background-color: #000000;
+  color: #000000 !important;
+}
+
+/* line 322, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+button.special, .button.special {
+  box-shadow: none;
+  background-color: #000000;
+  color: #000000 !important;
+}
+
+/* line 328, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+input[type="submit"].special:hover, input[type="reset"].special:hover, input[type="button"].special:hover {
+  background-color: #000000;
+}
+
+/* line 331, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+button.special:hover, .button.special:hover {
+  background-color: #000000;
+}
+
+/* line 335, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+input[type="submit"].special:active, input[type="reset"].special:active, input[type="button"].special:active {
+  background-color: #000000;
+}
+
+/* line 338, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+button.special:active, .button.special:active {
+  background-color: #000000;
+}
+
+/* Form */
+/* line 343, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+form {
+  margin: 0 0 2em 0;
+}
+
+/* line 346, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+label {
+  display: block;
+  font-size: 0.9em;
+  font-weight: bold;
+  margin: 0 0 1em 0;
+}
+
+/* line 353, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+input[type="text"], input[type="password"], input[type="email"] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  border-radius: 6px;
+  border: none;
+  border-style: solid;
+  border-width: 1px;
+  color: inherit;
+  display: block;
+  outline: 0;
+  padding: 0 1em;
+  text-decoration: none;
+  width: 100%;
+}
+
+/* line 369, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+select, textarea {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  border-radius: 6px;
+  border: none;
+  border-style: solid;
+  border-width: 1px;
+  color: inherit;
+  display: block;
+  outline: 0;
+  padding: 0 1em;
+  text-decoration: none;
+  width: 100%;
+}
+
+/* line 385, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+select:invalid, textarea:invalid {
+  box-shadow: none;
+}
+
+/* line 389, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+input[type="text"], input[type="password"], input[type="email"] {
+  height: 2.75em;
+}
+
+/* line 392, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+textarea {
+  padding: 0.75em 1em;
+}
+
+/* line 395, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+label {
+  color: #828282;
+}
+
+/* line 399, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+input[type="text"], input[type="password"], input[type="email"] {
+  color: inherit;
+  background-color: #828282;
+  border-color: #e6e6e6;
+}
+
+/* line 404, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+select, textarea {
+  color: inherit;
+  background-color: #828282;
+  border-color: #e6e6e6;
+}
+
+/* Image */
+/* line 411, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.image {
+  border-radius: 6px;
+  border: 0;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 0 4px #fbfbfb, 0 0 0 5px #e6e6e6;
+}
+/* line 418, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.image img {
+  border-radius: 6px;
+  display: block;
+}
+/* line 422, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.image.main {
+  display: block;
+  margin: 0 0 3em 0;
+  width: 100%;
+}
+/* line 426, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.image.main img {
+  width: 100%;
+}
+/* line 428, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.image.phone {
+  box-shadow: none;
+  border-radius: 0;
+  margin: 0 0 3em 0;
+  width: 13em;
+  box-shadow: none;
+}
+/* line 433, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.image.phone img {
+  border-radius: 0;
+  display: block;
+  position: relative;
+  width: 100%;
+}
+/* line 438, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.image.phone .inner, .image.phone:before, .image.phone:after {
+  display: block;
+  border: solid 2px #828282;
+}
+/* line 441, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.image.phone .inner {
+  position: relative;
+}
+/* line 443, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.image.phone .inner:before, .image.phone .inner:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+}
+/* line 447, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.image.phone .inner:before {
+  top: -1.375em;
+  margin-left: -1em;
+  width: 2em;
+  height: 0.25em;
+  border-radius: 0.5em;
+  background: #828282;
+}
+/* line 454, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.image.phone .inner:after {
+  bottom: -2.75em;
+  margin-left: -1em;
+  width: 2em;
+  height: 2em;
+  border-radius: 100%;
+  border: solid 2px #828282;
+}
+/* line 461, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.image.phone:before, .image.phone:after {
+  content: "";
+}
+/* line 463, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.image.phone:before {
+  height: 2.5em;
+  border-radius: 1em 1em 0 0;
+  border-bottom: 0;
+}
+/* line 467, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.image.phone:after {
+  height: 3.5em;
+  border-radius: 0 0 1em 1em;
+  border-top: 0;
+}
+/* line 472, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.image.phone .inner, .image.phone:before, .image.phone:after {
+  border-color: #e6e6e6;
+}
+/* line 475, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.image.phone .inner:before {
+  background: #e6e6e6;
+}
+/* line 477, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.image.phone .inner:after {
+  border-color: #e6e6e6;
+}
+
+/* List */
+/* line 483, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+ul {
+  list-style: disc;
+  margin: 0 0 2em 0;
+  padding-left: 1em;
+}
+/* line 487, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+ul li {
+  padding-left: 0.5em;
+}
+/* line 489, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+ul.alt {
+  list-style: none;
+  padding-left: 0;
+}
+/* line 492, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+ul.alt li {
+  border-top-style: solid;
+  border-top-width: 1px;
+  padding: 0.5em 0;
+}
+/* line 496, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+ul.alt li:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+/* line 500, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+ul.actions {
+  cursor: default;
+  list-style: none;
+  padding-left: 0;
+}
+/* line 504, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+ul.actions li {
+  display: inline-block;
+  padding: 0 1em 0 0;
+  vertical-align: middle;
+}
+/* line 508, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+ul.actions li:last-child {
+  padding-right: 0;
+}
+/* line 510, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+ul.actions.small li {
+  padding: 0 0.5em 0 0;
+}
+/* line 513, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+ul.actions.vertical li {
+  display: block;
+  padding: 1em 0 0 0;
+}
+/* line 516, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+ul.actions.vertical li:first-child {
+  padding-top: 0;
+}
+/* line 518, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+ul.actions.vertical li > * {
+  margin-bottom: 0;
+}
+/* line 520, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+ul.actions.vertical.small li {
+  padding: 0.5em 0 0 0;
+}
+/* line 522, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+ul.actions.vertical.small li:first-child {
+  padding-top: 0;
+}
+/* line 524, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+ul.actions.fit {
+  display: table;
+  margin-left: -1em;
+  padding: 0;
+  table-layout: fixed;
+  width: calc(100% + 1em);
+}
+/* line 530, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+ul.actions.fit li {
+  display: table-cell;
+  padding: 0 0 0 1em;
+}
+/* line 533, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+ul.actions.fit li > * {
+  margin-bottom: 0;
+}
+/* line 535, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+ul.actions.fit.small {
+  margin-left: -0.5em;
+  width: calc(100% + 0.5em);
+}
+/* line 538, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+ul.actions.fit.small li {
+  padding: 0 0 0 0.5em;
+}
+
+@media screen and (max-width: 736px) {
+  /* line 542, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  ul.icons.major li {
+    padding: 0 1.25em 0 0;
+  }
+  /* line 544, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  ul.icons.major li .icon:before {
+    font-size: 1.75rem;
+  }
+}
+@media screen and (max-width: 480px) and (orientation: portrait) {
+  /* line 549, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  ul.actions {
+    margin: 0 0 2em 0;
+  }
+  /* line 551, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  ul.actions li {
+    padding: 1em 0 0 0;
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  /* line 556, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  ul.actions li:first-child {
+    padding-top: 0;
+  }
+  /* line 558, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  ul.actions li > * {
+    width: 100%;
+    margin: 0 !important;
+  }
+  /* line 561, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  ul.actions li > *.icon:before {
+    margin-left: -2em;
+  }
+  /* line 563, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  ul.actions.small li {
+    padding: 0.5em 0 0 0;
+  }
+  /* line 565, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  ul.actions.small li:first-child {
+    padding-top: 0;
+  }
+}
+/* line 568, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+ul.alt > li {
+  border-top-color: #e6e6e6;
+}
+
+/* Section */
+/* line 573, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+section.special {
+  text-align: center;
+}
+
+/* Spotlight */
+/* line 578, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.spotlight {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  margin: 0 0 2em 0;
+}
+/* line 588, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.spotlight .image {
+  width: 30%;
+  border-radius: 100%;
+  margin: 0 3em 0 0;
+  display: block;
+}
+/* line 593, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.spotlight .image img {
+  display: block;
+  border-radius: 100%;
+  width: 100%;
+}
+/* line 597, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.spotlight .content {
+  width: 70%;
+}
+/* line 599, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.spotlight .content > :last-child {
+  margin-bottom: 0;
+}
+/* line 601, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.spotlight:nth-child(2n) {
+  -moz-flex-direction: row-reverse;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+/* line 606, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.spotlight:nth-child(2n) .image {
+  margin: 0 0 0 3em;
+}
+/* line 608, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.spotlight:nth-child(2n) .content {
+  text-align: right;
+}
+
+@media screen and (max-width: 1280px) {
+  /* line 613, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  #header {
+    background-image: url("images/overlay.png"), url("images/pattern-size2.svg");
+  }
+}
+@media screen and (max-width: 736px) {
+  /* line 616, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  #header {
+    background-image: url("images/overlay.png"), url("images/pattern-size3.svg");
+  }
+  /* line 618, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  #header h1 {
+    font-size: 2em;
+  }
+  /* line 620, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  #header p {
+    font-size: 1em;
+    line-height: inherit;
+  }
+}
+@media screen and (max-width: 736px) and (orientation: landscape) {
+  /* line 626, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  .spotlight .image {
+    margin: 0 2em 0 0;
+  }
+  /* line 628, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  .spotlight:nth-child(2n) .image {
+    margin: 0 0 0 2em;
+  }
+}
+@media screen and (max-width: 736px) and (orientation: portrait) {
+  /* line 632, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  .spotlight {
+    -moz-flex-direction: column !important;
+    -webkit-flex-direction: column !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+  }
+  /* line 638, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  .spotlight .image {
+    width: 100%;
+    max-width: 60%;
+    margin: 0 0 2em 0 !important;
+  }
+  /* line 643, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  .spotlight .content {
+    width: 100%;
+    text-align: center !important;
+  }
+}
+/* Wrapper */
+/* line 649, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper {
+  padding: 4.5em 0 2.5em 0;
+  background-color: #fbfbfb;
+  border-bottom: solid 2px #eaeaea;
+}
+/* line 653, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper > .inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50em;
+}
+/* line 657, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper > .inner.alt > * {
+  border-top: solid 2px #eaeaea;
+  margin-bottom: 0;
+  margin-top: 3em;
+  padding-top: 3em;
+}
+/* line 662, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper > .inner.alt > *:first-child {
+  border-top: 0;
+  margin-top: 0;
+  padding-top: 0;
+}
+/* line 666, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style1 {
+  background-color: #4696e5;
+  color: #d0e4f8;
+}
+/* line 670, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style1 input[type="submit"], .wrapper.style1 input[type="reset"], .wrapper.style1 input[type="button"] {
+  background-color: transparent;
+  color: #000000 !important;
+  box-shadow: inset 0 0 0 2px #828282;
+}
+/* line 674, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style1 button, .wrapper.style1 .button {
+  background-color: transparent;
+  color: #000000 !important;
+  box-shadow: inset 0 0 0 2px #000000;
+}
+/* line 679, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style1 input[type="submit"]:hover, .wrapper.style1 input[type="reset"]:hover, .wrapper.style1 input[type="button"]:hover {
+  background-color: #eaeaea;
+}
+/* line 681, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style1 button:hover, .wrapper.style1 .button:hover {
+  background-color: #eaeaea;
+}
+/* line 684, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style1 input[type="submit"]:active, .wrapper.style1 input[type="reset"]:active, .wrapper.style1 input[type="button"]:active {
+  background-color: #828282;
+}
+/* line 686, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style1 button:active, .wrapper.style1 .button:active {
+  background-color: #828282;
+}
+/* line 689, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style1 input[type="submit"].special, .wrapper.style1 input[type="reset"].special, .wrapper.style1 input[type="button"].special {
+  box-shadow: none;
+  background-color: #fbfbfb;
+  color: #4696e5 !important;
+}
+/* line 693, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style1 button.special, .wrapper.style1 .button.special {
+  box-shadow: none;
+  background-color: #fbfbfb;
+  color: #4696e5 !important;
+}
+/* line 697, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style1 label {
+  color: #fbfbfb;
+}
+/* line 700, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style1 input[type="text"], .wrapper.style1 input[type="password"], .wrapper.style1 input[type="email"] {
+  color: inherit;
+  background-color: #fbfbfb;
+  border-color: #828282;
+}
+/* line 704, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style1 select, .wrapper.style1 textarea {
+  color: inherit;
+  background-color: #fbfbfb;
+  border-color: #828282;
+}
+/* line 709, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style1 input[type="text"]:focus, .wrapper.style1 input[type="password"]:focus, .wrapper.style1 input[type="email"]:focus {
+  border-color: #000000;
+  box-shadow: 0 0 0 1px #000000;
+  color: #000000 !important;
+}
+/* line 713, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style1 select:focus, .wrapper.style1 textarea:focus {
+  border-color: #000000;
+  box-shadow: 0 0 0 1px #000000;
+  color: #000000 !important;
+}
+/* line 717, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style1 .select-wrapper:before {
+  color: #828282;
+}
+/* line 719, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style1 ::-webkit-input-placeholder, .wrapper.style1 :-moz-placeholder, .wrapper.style1 ::-moz-placeholder, .wrapper.style1 :-ms-input-placeholder, .wrapper.style1 .formerize-placeholder {
+  color: #b5d5f4 !important;
+}
+/* line 721, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style1 .icon {
+  color: #b5d5f4;
+}
+/* line 723, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style1 .image {
+  box-shadow: 0 0 0 4px #4696e5, 0 0 0 5px #828282;
+}
+/* line 725, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style1 .image.phone {
+  box-shadow: none;
+}
+/* line 727, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style1 .image.phone .inner, .wrapper.style1 .image.phone:before, .wrapper.style1 .image.phone:after {
+  border-color: #828282;
+}
+/* line 730, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style1 .image.phone .inner:before {
+  background: #828282;
+}
+/* line 732, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style1 .image.phone .inner:after {
+  border-color: #828282;
+}
+/* line 734, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style1 ul.alt > li {
+  border-top-color: #828282;
+}
+/* line 737, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style1 input, .wrapper.style1 select, .wrapper.style1 textarea {
+  color: #d0e4f8;
+}
+/* line 739, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style1 a {
+  color: inherit;
+  border-bottom-color: #828282;
+  color: #fbfbfb;
+}
+/* line 743, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style1 strong, .wrapper.style1 b, .wrapper.style1 h1, .wrapper.style1 h2, .wrapper.style1 h3, .wrapper.style1 h4, .wrapper.style1 h5, .wrapper.style1 h6 {
+  color: #828282;
+}
+/* line 746, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style2 {
+  background-color: #fbfbfb;
+  color: #999999;
+}
+/* line 750, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style2 input[type="submit"], .wrapper.style2 input[type="reset"], .wrapper.style2 input[type="button"] {
+  background-color: transparent;
+  color: #828282 !important;
+  box-shadow: inset 0 0 0 2px #e6e6e6;
+}
+/* line 754, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style2 button, .wrapper.style2 .button {
+  background-color: transparent;
+  color: #828282 !important;
+  box-shadow: inset 0 0 0 2px #e6e6e6;
+}
+/* line 759, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style2 input[type="submit"]:hover, .wrapper.style2 input[type="reset"]:hover, .wrapper.style2 input[type="button"]:hover {
+  background-color: rgba(144, 144, 144, 0.075);
+}
+/* line 761, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style2 button:hover, .wrapper.style2 .button:hover {
+  background-color: rgba(144, 144, 144, 0.075);
+}
+/* line 764, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style2 input[type="submit"]:active, .wrapper.style2 input[type="reset"]:active, .wrapper.style2 input[type="button"]:active {
+  background-color: rgba(144, 144, 144, 0.15);
+}
+/* line 766, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style2 button:active, .wrapper.style2 .button:active {
+  background-color: rgba(144, 144, 144, 0.15);
+}
+/* line 769, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style2 input[type="submit"].special, .wrapper.style2 input[type="reset"].special, .wrapper.style2 input[type="button"].special {
+  box-shadow: none;
+  background-color: #4696e5;
+  color: #ffffff !important;
+}
+/* line 773, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style2 button.special, .wrapper.style2 .button.special {
+  box-shadow: none;
+  background-color: #4696e5;
+  color: #ffffff !important;
+}
+/* line 778, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style2 input[type="submit"].special:hover, .wrapper.style2 input[type="reset"].special:hover, .wrapper.style2 input[type="button"].special:hover {
+  background-color: #5ca3e8;
+}
+/* line 780, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style2 button.special:hover, .wrapper.style2 .button.special:hover {
+  background-color: #5ca3e8;
+}
+/* line 783, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style2 input[type="submit"].special:active, .wrapper.style2 input[type="reset"].special:active, .wrapper.style2 input[type="button"].special:active {
+  background-color: #3089e2;
+}
+/* line 785, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style2 button.special:active, .wrapper.style2 .button.special:active {
+  background-color: #3089e2;
+}
+/* line 787, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style2 label {
+  color: #828282;
+}
+/* line 790, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style2 input[type="text"], .wrapper.style2 input[type="password"], .wrapper.style2 input[type="email"] {
+  color: inherit;
+  background-color: rgba(144, 144, 144, 0.075);
+  border-color: #e6e6e6;
+}
+/* line 794, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style2 select, .wrapper.style2 textarea {
+  color: inherit;
+  background-color: rgba(144, 144, 144, 0.075);
+  border-color: #e6e6e6;
+}
+/* line 799, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style2 input[type="text"]:focus, .wrapper.style2 input[type="password"]:focus, .wrapper.style2 input[type="email"]:focus {
+  border-color: #4696e5;
+  box-shadow: 0 0 0 1px #4696e5;
+}
+/* line 802, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style2 select:focus, .wrapper.style2 textarea:focus {
+  border-color: #4696e5;
+  box-shadow: 0 0 0 1px #4696e5;
+}
+/* line 805, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style2 .select-wrapper:before {
+  color: #e6e6e6;
+}
+/* line 808, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style2 input[type="checkbox"] + label, .wrapper.style2 input[type="radio"] + label {
+  color: #999999;
+}
+/* line 810, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style2 input[type="checkbox"] + label:before, .wrapper.style2 input[type="radio"] + label:before {
+  background-color: rgba(144, 144, 144, 0.075);
+  border-color: #e6e6e6;
+}
+/* line 813, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style2 input[type="checkbox"]:checked + label:before, .wrapper.style2 input[type="radio"]:checked + label:before {
+  background-color: #4696e5;
+  border-color: #4696e5;
+  color: #ffffff;
+}
+/* line 817, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style2 input[type="checkbox"]:focus + label:before, .wrapper.style2 input[type="radio"]:focus + label:before {
+  border-color: #4696e5;
+  box-shadow: 0 0 0 1px #4696e5;
+}
+/* line 820, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style2 ::-webkit-input-placeholder, .wrapper.style2 :-moz-placeholder, .wrapper.style2 ::-moz-placeholder, .wrapper.style2 :-ms-input-placeholder, .wrapper.style2 .formerize-placeholder {
+  color: #e0e0e0 !important;
+}
+/* line 822, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style2 .icon {
+  color: #e0e0e0;
+}
+/* line 824, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style2 .image {
+  box-shadow: 0 0 0 4px #fbfbfb, 0 0 0 5px #e6e6e6;
+}
+/* line 826, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style2 .image.phone {
+  box-shadow: none;
+}
+/* line 828, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style2 .image.phone .inner, .wrapper.style2 .image.phone:before, .wrapper.style2 .image.phone:after {
+  border-color: #e6e6e6;
+}
+/* line 831, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style2 .image.phone .inner:before {
+  background: #e6e6e6;
+}
+/* line 833, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style2 .image.phone .inner:after {
+  border-color: #e6e6e6;
+}
+/* line 835, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style2 ul.alt > li {
+  border-top-color: #e6e6e6;
+}
+/* line 838, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style2 table tbody tr {
+  border-color: #e6e6e6;
+}
+/* line 840, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style2 table tbody tr:nth-child(2n + 1) {
+  background-color: rgba(144, 144, 144, 0.075);
+}
+/* line 842, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style2 table th {
+  color: #828282;
+}
+/* line 844, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style2 table thead {
+  border-bottom-color: #e6e6e6;
+}
+/* line 846, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style2 table tfoot {
+  border-top-color: #e6e6e6;
+}
+/* line 848, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style2 table.alt tbody tr td {
+  border-color: #e6e6e6;
+}
+/* line 850, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style2 input, .wrapper.style2 select, .wrapper.style2 textarea {
+  color: #999999;
+}
+/* line 852, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style2 a {
+  color: inherit;
+  border-bottom-color: #d6d6d6;
+}
+/* line 855, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style2 a:hover {
+  color: #4696e5;
+}
+/* line 857, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style2 strong, .wrapper.style2 b, .wrapper.style2 h1, .wrapper.style2 h2, .wrapper.style2 h3, .wrapper.style2 h4, .wrapper.style2 h5, .wrapper.style2 h6 {
+  color: #828282;
+}
+/* line 859, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style2 blockquote {
+  border-left-color: #e6e6e6;
+}
+/* line 861, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style2 code {
+  background: rgba(144, 144, 144, 0.075);
+  border-color: #e6e6e6;
+}
+/* line 864, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+.wrapper.style2 hr {
+  border-bottom-color: #e6e6e6;
+}
+
+@media screen and (max-width: 980px) {
+  /* line 869, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  .wrapper {
+    padding: 4em 4em 2em 4em;
+  }
+  /* line 871, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  .wrapper > .inner {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 736px) and (orientation: landscape) {
+  /* line 875, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  .wrapper {
+    padding: 3em 3em 1em 3em;
+  }
+}
+@media screen and (max-width: 736px) and (orientation: portrait) {
+  /* line 879, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  .wrapper {
+    padding: 3em 1.5em 1em 1.5em;
+  }
+}
+@media screen and (max-width: 480px) and (orientation: landscape) {
+  /* line 883, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  .wrapper {
+    padding: 2em 1.5em 0.1em 1.5em;
+  }
+}
+@media screen and (max-width: 480px) and (orientation: portrait) {
+  /* line 887, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  .wrapper {
+    padding: 2em 1em 0.1em 1em;
+  }
+}
+@media screen and (max-width: 980px) {
+  /* line 891, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  #header {
+    height: auto;
+    min-height: 0;
+  }
+  /* line 894, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  #header .content {
+    margin: -2em 4em 0 0;
+  }
+}
+@media screen and (max-width: 980px) and (orientation: portrait) {
+  /* line 898, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  #header {
+    padding: 6em 3em 4em 3em;
+    -moz-flex-direction: column-reverse;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+  /* line 904, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  #header .content {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0 0 2em 0;
+  }
+  /* line 909, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  #header .image {
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 736px) {
+  /* line 914, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  #header h1 {
+    font-size: 2em;
+  }
+  /* line 916, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  #header p {
+    font-size: 1em;
+    line-height: inherit;
+  }
+}
+@media screen and (max-width: 736px) and (orientation: landscape) {
+  /* line 921, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  #header {
+    padding: 2em 2em 0.1em 2em;
+  }
+  /* line 923, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  #header .content {
+    margin: 0 2em 2em 0;
+  }
+  /* line 925, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  #header .image {
+    font-size: 0.8em;
+    width: 15em;
+    max-width: 20vw;
+  }
+  /* line 929, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  #header .image .inner, #header .image:before, #header .image:after {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 736px) and (orientation: portrait) {
+  /* line 933, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  #header {
+    padding: 3em 1.5em 1em 1.5em;
+  }
+  /* line 935, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  #header .image {
+    font-size: 0.6em;
+    max-width: 60vw;
+  }
+}
+@media screen and (max-width: 480px) and (orientation: landscape) {
+  /* line 940, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  #header {
+    padding: 2em 1.5em 0.1em 1.5em;
+  }
+  /* line 942, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  #header .image {
+    font-size: 0.7em;
+  }
+  /* line 944, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  #header .actions {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 480px) and (orientation: portrait) {
+  /* line 948, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  #header {
+    padding: 2em 1em 0.1em 1em;
+  }
+}
+@media screen and (max-width: 980px) and (orientation: portrait) {
+  /* line 954, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  body.is-loading #header .content {
+    -moz-transform: none;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    opacity: 1;
+  }
+  /* line 960, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  body.is-loading #header .image {
+    -moz-transform: translateY(2em);
+    -webkit-transform: translateY(2em);
+    -ms-transform: translateY(2em);
+    transform: translateY(2em);
+  }
+}
+/* Main */
+/* line 967, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+#main {
+  padding: 4em 0 2em 0;
+}
+
+@media screen and (max-width: 736px) {
+  /* line 970, /home/palaiologos/Odin/john-site/app/assets/stylesheets/index.sass */
+  #main {
+    padding: 3em 0 1em 0;
+  }
+}
+/* Media Screen */
+/* Colors */
+/* line 3, /home/palaiologos/Odin/john-site/app/assets/stylesheets/resume.sass */
+h2 {
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* line 7, /home/palaiologos/Odin/john-site/app/assets/stylesheets/resume.sass */
+.wrapper {
+  position: relative;
+}
+/* line 9, /home/palaiologos/Odin/john-site/app/assets/stylesheets/resume.sass */
+.wrapper > .inner {
+  padding: 5em 5em 3em 5em;
+  max-width: 100%;
+  width: 75em;
+}
+/* line 13, /home/palaiologos/Odin/john-site/app/assets/stylesheets/resume.sass */
+.wrapper.style3 {
+  background-color: #fbfbfb;
+}
+/* line 15, /home/palaiologos/Odin/john-site/app/assets/stylesheets/resume.sass */
+.wrapper.style3-alt {
+  background-color: #828282;
+}
+/* line 17, /home/palaiologos/Odin/john-site/app/assets/stylesheets/resume.sass */
+.wrapper.fullscreen {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-flex-direction: column;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 1680px) {
+  /* line 33, /home/palaiologos/Odin/john-site/app/assets/stylesheets/resume.sass */
+  .wrapper > .inner {
+    padding: 4em 4em 2em 4em;
+  }
+}
+@media screen and (max-width: 1280px) {
+  /* line 37, /home/palaiologos/Odin/john-site/app/assets/stylesheets/resume.sass */
+  .wrapper > .inner {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 736px) {
+  /* line 41, /home/palaiologos/Odin/john-site/app/assets/stylesheets/resume.sass */
+  .wrapper > .inner {
+    padding: 3em 2em 1em 2em;
+  }
+}
+@media screen and (max-width: 1280px) {
+  /* line 45, /home/palaiologos/Odin/john-site/app/assets/stylesheets/resume.sass */
+  .wrapper.fullscreen {
+    min-height: calc(100vh - 2.5em);
+  }
+}
+@media screen and (max-width: 736px) {
+  /* line 49, /home/palaiologos/Odin/john-site/app/assets/stylesheets/resume.sass */
+  .wrapper.fullscreen {
+    padding: 2em 0;
+    min-height: 0;
+  }
+}
+/* line 54, /home/palaiologos/Odin/john-site/app/assets/stylesheets/resume.sass */
+.wrapper.fade-up > .inner {
+  -moz-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  -moz-transition: opacity 1s ease, -moz-transform 1s ease;
+  -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+  -ms-transition: opacity 1s ease, -ms-transform 1s ease;
+  transition: opacity 1s ease, transform 1s ease;
+  opacity: 1;
+}
+/* line 64, /home/palaiologos/Odin/john-site/app/assets/stylesheets/resume.sass */
+.wrapper.fade-up.inactive > .inner {
+  opacity: 0;
+  -moz-transform: translateY(1em);
+  -webkit-transform: translateY(1em);
+  -ms-transform: translateY(1em);
+  transform: translateY(1em);
+}
+
+/* line 71, /home/palaiologos/Odin/john-site/app/assets/stylesheets/resume.sass */
+body.is-loading .wrapper.fade-up > .inner {
+  opacity: 0;
+  -moz-transform: translateY(1em);
+  -webkit-transform: translateY(1em);
+  -ms-transform: translateY(1em);
+  transform: translateY(1em);
+}
+
+/* line 79, /home/palaiologos/Odin/john-site/app/assets/stylesheets/resume.sass */
+.wrapper.fade > .inner {
+  -moz-transition: opacity 1s ease;
+  -webkit-transition: opacity 1s ease;
+  -ms-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+  opacity: 1;
+}
+/* line 85, /home/palaiologos/Odin/john-site/app/assets/stylesheets/resume.sass */
+.wrapper.fade.inactive > .inner {
+  opacity: 0;
+}
+
+/* line 88, /home/palaiologos/Odin/john-site/app/assets/stylesheets/resume.sass */
+body.is-loading .wrapper.fade > .inner {
+  opacity: 0;
+}
+
+/* Features */
+/* line 93, /home/palaiologos/Odin/john-site/app/assets/stylesheets/resume.sass */
+.features {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  border-radius: 0.25em;
+  border: solid 2px #eaeaea;
+  background: #fbfbfb;
+  margin: 0 0 2em 0;
+}
+/* line 106, /home/palaiologos/Odin/john-site/app/assets/stylesheets/resume.sass */
+.features section {
+  padding: 3.5em 3em 1em 7em;
+  background-color: #fbfbfb;
+  width: 50%;
+  border-top: solid 2px #eaeaea;
+  position: relative;
+}
+/* line 112, /home/palaiologos/Odin/john-site/app/assets/stylesheets/resume.sass */
+.features section:nth-child(-n + 2) {
+  border-top-width: 0;
+}
+/* line 114, /home/palaiologos/Odin/john-site/app/assets/stylesheets/resume.sass */
+.features section:nth-child(2n) {
+  border-left: solid 1px #eaeaea;
+}
+/* line 116, /home/palaiologos/Odin/john-site/app/assets/stylesheets/resume.sass */
+.features section .icon {
+  -moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease;
+  -webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
+  -ms-transition: opacity 0.5s ease, -ms-transform 0.5s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  -moz-transition-delay: 1s;
+  -webkit-transition-delay: 1s;
+  -ms-transition-delay: 1s;
+  transition-delay: 1s;
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  position: absolute;
+  left: 3em;
+  top: 3em;
+  opacity: 1;
+}
+/* line 133, /home/palaiologos/Odin/john-site/app/assets/stylesheets/resume.sass */
+.features section:nth-child(1) .icon {
+  -moz-transition-delay: 0.15s;
+  -webkit-transition-delay: 0.15s;
+  -ms-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+/* line 138, /home/palaiologos/Odin/john-site/app/assets/stylesheets/resume.sass */
+.features section:nth-child(2) .icon {
+  -moz-transition-delay: 0.3s;
+  -webkit-transition-delay: 0.3s;
+  -ms-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+/* line 143, /home/palaiologos/Odin/john-site/app/assets/stylesheets/resume.sass */
+.features section:nth-child(3) .icon {
+  -moz-transition-delay: 0.45s;
+  -webkit-transition-delay: 0.45s;
+  -ms-transition-delay: 0.45s;
+  transition-delay: 0.45s;
+}
+/* line 148, /home/palaiologos/Odin/john-site/app/assets/stylesheets/resume.sass */
+.features section:nth-child(4) .icon {
+  -moz-transition-delay: 0.6s;
+  -webkit-transition-delay: 0.6s;
+  -ms-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+/* line 153, /home/palaiologos/Odin/john-site/app/assets/stylesheets/resume.sass */
+.features.inactive section .icon {
+  -moz-transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+  opacity: 0;
+}
+
+@media screen and (max-width: 980px) {
+  /* line 161, /home/palaiologos/Odin/john-site/app/assets/stylesheets/resume.sass */
+  .features {
+    display: block;
+  }
+  /* line 163, /home/palaiologos/Odin/john-site/app/assets/stylesheets/resume.sass */
+  .features section {
+    border-top-width: 1px !important;
+    border-left-width: 0 !important;
+    width: 100%;
+  }
+  /* line 167, /home/palaiologos/Odin/john-site/app/assets/stylesheets/resume.sass */
+  .features section:first-child {
+    border-top-width: 0 !important;
+  }
+}
+@media screen and (max-width: 736px) {
+  /* line 171, /home/palaiologos/Odin/john-site/app/assets/stylesheets/resume.sass */
+  .features section {
+    padding: 2.5em 1.5em 0.1em 5.5em;
+  }
+  /* line 173, /home/palaiologos/Odin/john-site/app/assets/stylesheets/resume.sass */
+  .features section .icon {
+    left: 1.5em;
+    top: 2em;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 178, /home/palaiologos/Odin/john-site/app/assets/stylesheets/resume.sass */
+  .features section {
+    padding: 2em 1.5em 0.1em 1.5em;
+  }
+  /* line 180, /home/palaiologos/Odin/john-site/app/assets/stylesheets/resume.sass */
+  .features section .icon {
+    left: 0;
+    position: relative;
+    top: 0;
+  }
+}
+/* line 185, /home/palaiologos/Odin/john-site/app/assets/stylesheets/resume.sass */
+.icon {
+  text-decoration: none;
+  border-bottom: none;
+  position: relative;
+}
+/* line 189, /home/palaiologos/Odin/john-site/app/assets/stylesheets/resume.sass */
+.icon:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+}
+/* line 196, /home/palaiologos/Odin/john-site/app/assets/stylesheets/resume.sass */
+.icon > .label {
+  display: none;
+}
+/* line 198, /home/palaiologos/Odin/john-site/app/assets/stylesheets/resume.sass */
+.icon.major {
+  width: 2.5em;
+  height: 2.5em;
+  display: block;
+  background: #F11C63;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 2.5em;
+  margin: 0 0 1.3em 0;
+}
+/* line 207, /home/palaiologos/Odin/john-site/app/assets/stylesheets/resume.sass */
+.icon.major:before {
+  font-size: 1.25em;
+}
+
+/* line 211, /home/palaiologos/Odin/john-site/app/assets/stylesheets/resume.sass */
+.wrapper.style3 .icon.major:before {
+  color: #fbfbfb;
+}
+/* line 213, /home/palaiologos/Odin/john-site/app/assets/stylesheets/resume.sass */
+.wrapper.style3-alt .icon.major:before {
+  color: #fbfbfb;
+}
+
+/* line 216, /home/palaiologos/Odin/john-site/app/assets/stylesheets/resume.sass */
+#one {
+  background-color: #4696e5;
+  background-image: url("section-header-overlay.png"), url("section-header-overlay.svg");
+  background-position: top left, center center;
+  background-attachment: fixed, fixed;
+  background-size: auto, cover;
+}
+
+/* line 223, /home/palaiologos/Odin/john-site/app/assets/stylesheets/resume.sass */
+section h3 {
+  text-align: center;
+}
+/* Media Screen */
+/* Colors */
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+

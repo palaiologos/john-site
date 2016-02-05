@@ -3,6 +3,6 @@ Rails.application.routes.draw do
   get  'index'       => 'home#index'
   get  'about'       => 'home#about'
   get  'resume'      => 'home#resume'
-  get  'contact'     => 'home#contact'
+  get  'contact'     => 'messages#new'
   resources :messages, only: [:new, :create]
 end
