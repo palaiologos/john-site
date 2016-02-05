@@ -1,0 +1,61 @@
+<!-- Contact Header -->
+<section id="one" class="wrapper style2 special">
+  <header class="major">
+    <h2 class="animated fadeInDown delay">Contact</h2>
+  </header>
+</section>
+
+<!-- Contact Section -->
+<section id="three" class="wrapper style1 fade-up white-background">
+  <div class="inner">
+    <h2 class="contact-header">Get in touch</h2>
+    <p class="contact-text">Feel free to send me an email and don't forget to check out my github!</p>
+    <div class="split style1">
+
+      <section> <!-- Form Container -->
+
+        <!-- Form -->
+        <%= form_for @message do |f| %>
+          <% if @message.errors.any? %>
+            <div id="error_explanation">
+              <h2>
+                <%= "#{pluralize(@message.errors.count, "error")} prohibited this message from being sent:" %>
+              </h2>
+              <ul>
+                <% @message.errors.full_messages.each do |msg| %>
+                  <li class="error-item"><%= msg %></li>
+                <% end %>
+              <ul>
+            </div>
+          <% end %>
+
+          <div class="field">
+            <%= f.label :name %>
+            <%= f.text_field :name %>
+          </div>
+
+          <div class="field">
+            <%= f.label :email %>
+            <%= f.email_field :email %>
+          </div>
+
+          <div class="field">
+            <%= f.label :content %>
+            <%= f.text_area :content %>
+          </div>
+
+          <ul class="actions">
+            <li>
+              <%= f.submit 'Send', {:class => 'button'} %>
+            </li>
+          </ul>
+        <% end %>
+
+        </form> <!-- End Form -->
+
+      </section> <!-- End Form Container -->
+
+
+    </div>
+  </div>
+</section> <!-- End Contact Container -->
