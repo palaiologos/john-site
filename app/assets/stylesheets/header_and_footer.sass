@@ -144,24 +144,50 @@
     margin-top: .6rem
 
   #nav
+    //display: none
+    height: auto
+  #responsive-nav
+    position: relative
+  #pull
     display: block
     float: right
+    margin: 4px 0 0 5px
+    background: none
+    border: 0
+    span
+      display: block
+  #nav
+    float: left
     font-family: 'Montserrat', sans-serif
-    font-size: 1rem
-    padding-top: 0.438rem
+    font-size: 16px
+    text-align: left
+    margin-top: 20px
+    background: $white
+    clear: left
+    width: 100%
     li
-      display: inline-block
-      padding: 0 0 0 3rem
+      display: block
+      border-bottom: solid 1px #eaeaea
+      margin: 0
+      padding: 0
       a
-        color: #a2a2a2
-        &:hover
-          color: #525252
-
-      &#current a
+        display: block
+        padding: 12px 0
         color: $black
-
+        &:active
+          color: $white
+          background: #171818
+          padding: 12px 6px
+      &#current a:active
+        color: #333
+        background: $white
+        padding: 12px 0
+      &:last-child
+        border: 0
     .fa-angle-right
-      display: none
+      display: block
+      float: right
+      margin-top: 1px
 
 
 @media screen and (min-width: $mobile-width) and (max-width: $tablet-width)
@@ -175,26 +201,6 @@
 
   #logo a span
     margin-top: .5rem
-
-  #nav
-    display: block
-    float: right
-    font-family: 'Montserrat', sans-serif
-    font-size: 1rem
-    padding-top: 0.438rem
-    li
-      display: inline-block
-      padding: 0 0 0 3rem
-      a
-        color: #a2a2a2
-        &:hover
-          color: #525252
-
-      &#current a
-        color: $black
-
-    .fa-angle-right
-      display: none
 
 
 @media screen and (min-width: $tablet-width) and (max-width: $desktop-width)
@@ -228,3 +234,8 @@
 
     .grid-12
       width: 940px
+
+
+
+
+@media only screen and (max-width: 719px)
