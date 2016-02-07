@@ -744,7 +744,7 @@ section.special
       color: $gray
 
   &.style2
-    background-color: #fbfbfb
+    background-color: $white
     color: #999999
     input
       &[type="submit"], &[type="reset"], &[type="button"]
@@ -804,19 +804,7 @@ section.special
       box-shadow: 0 0 0 1px #4696e5
     .select-wrapper:before
       color: #e6e6e6
-    input
-      &[type="checkbox"] + label, &[type="radio"] + label
-        color: #999999
-      &[type="checkbox"] + label:before, &[type="radio"] + label:before
-        background-color: rgba(144, 144, 144, 0.075)
-        border-color: #e6e6e6
-      &[type="checkbox"]:checked + label:before, &[type="radio"]:checked + label:before
-        background-color: #4696e5
-        border-color: #4696e5
-        color: #ffffff
-      &[type="checkbox"]:focus + label:before, &[type="radio"]:focus + label:before
-        border-color: #4696e5
-        box-shadow: 0 0 0 1px #4696e5
+
     \::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder, .formerize-placeholder
       color: #e0e0e0 !important
     .icon
@@ -834,19 +822,7 @@ section.special
             border-color: #e6e6e6
     ul.alt > li
       border-top-color: #e6e6e6
-    table
-      tbody tr
-        border-color: #e6e6e6
-        &:nth-child(2n + 1)
-          background-color: rgba(144, 144, 144, 0.075)
-      th
-        color: #828282
-      thead
-        border-bottom-color: #e6e6e6
-      tfoot
-        border-top-color: #e6e6e6
-      &.alt tbody tr td
-        border-color: #e6e6e6
+    
     input, select, textarea
       color: #999999
     a
